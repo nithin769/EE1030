@@ -1,0 +1,226 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}   
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+
+\title{Assignment-1\\CHAPETR-11\\Limits, Continuity and Differentiability}
+\author{EE24BTECH11048-NITHIN.K} 
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+\section{MCQs with One Correct Answer}
+
+
+\begin{enumerate} 
+\item Let g(x)=$\frac{(x-1)^n}{logcos^m(x-1)}$ ; $0<x<2$, m and n are integers, $m\neq0$, $n>0$, and let p be the left hand derivative of $|x-1|$ at $x=1$. If $\lim_{x \to 1^+}{g(x)=p}$, then \hfill{(2008)} 
+
+\begin{enumerate}[label=\alph*)]
+    \item $n=1,m=1$
+    \item $n=1,m=-1$
+    \item $n=2,m=2$
+    \item $n>2,m=n$ \\
+\end{enumerate}
+
+\item If $\lim_{x \to 0}[1+xln(1+b^2)]^\frac{1}{x}$ = $2bsin^2\theta$, $b>0$ and $\theta \in (-\pi,\pi]$, then the value of $\theta$ is 
+\hfill{(2011)} 
+
+\begin{enumerate}[label=\alph*)]
+    \item $\pm\frac{\pi}{4}$
+    \item $\pm\frac{\pi}{3}$
+    \item $\pm\frac{\pi}{6}$
+    \item $\pm\frac{\pi}{2}$ \\
+\end{enumerate} 
+
+\item If $\lim_{ x \to \infty}\left(\frac{x^2+x+1}{x+1}-ax-b\right) = 4$, then \hfill{(2012)} 
+
+\begin{enumerate}[label=\alph*)]
+    \item $a=1,b=4$
+    \item $a=1,b=-4$
+    \item $a=2,b=-3$
+    \item $a=2,b=3$ \\
+\end{enumerate}
+
+
+\item 
+Let $f(x) =\begin{cases} x^2|cos \frac{\pi}{x}| & \text{, } x \neq 0 \\ 0 & \text{, } x = 0 
+\end{cases}
+$, x $\in$ R then f is
+\hfill{(2012)} 
+\begin{enumerate}[label=\alph*)]
+    \item differentiable both at $x=0$ and at $x=2$
+    \item differentiable at x=0 but not differentiable at x=2
+    \item not differentiable at x=0 but differentiable at x=2
+    \item differentiable neither at x=0 nor at x=2 \\
+\end{enumerate}
+
+\item 
+Let $\alpha(a)$ and $\beta(a)$ be the roots of the equation $(\sqrt[3]{1+a}-1)x^2+(\sqrt[2]{1+a}-1)x+(\sqrt[6]{1+a}-1)=0$ where $a>-1$. then $\lim_{a \to 0^+}{\alpha(a)}$ and $\lim_{a \to 0^+}{\beta(a)}$ are
+\hfill{(2012)} 
+
+\begin{enumerate}[label=\alph*)]
+    \item $-\frac{5}{2}$ and 1
+    \item $-\frac{1}{2}$ and 1
+    \item $-\frac{7}{2}$ and 2
+    \item $-\frac{9}{2}$ and 3 \\
+\end{enumerate}
+
+\section{MCQs with One or More than One Correct}
+
+\item If $x+|y|=2y$, then y as a function of x is
+\hfill{(1984-3marks)} 
+\begin{enumerate}[label=\alph*)]
+    \item defined for all real x
+    \item continuous at $x=0$
+    \item differentiable for all x
+    \item such that $\frac{dy}{dx}=\frac{1}{3}$ for$x<0$ \\
+\end{enumerate}
+
+\item If $f(x)=x(\sqrt{x}-\sqrt{x+1})$, then- \\
+\hfill{(1985-2marks)} 
+\begin{enumerate}[label=\alph*)]
+    \item f(x) is continuous but not differentiable at $x=0$
+    \item f(x) is differentiable at $x=0$
+    \item f(x) is not differentiable at $x=0$
+    \item none of these \\
+\end{enumerate}
+
+\item The function $f(x)=1+|sinx|$ is \\
+\hfill{(1986-2marks)} 
+\begin{enumerate}[label=\alph*)]
+    \item continuous nowhere
+    \item continuous everywhere
+    \item differentiable nowhere 
+    \item not differentiable at $x=0$
+    \item not differentiable at infinite number of points \\
+\end{enumerate} 
+
+\item Let [x] denote the greatest integer less than or equal to x. If $f(x)=[xsin \pi x]$, then f(x) is \\
+\hfill{(1986-2marks)} 
+\begin{enumerate}[label=\alph*)]
+    \item continuous at $x=0$
+    \item continuous in (-1,0)
+    \item differentiable at $x=1$ 
+    \item differentiable in (-1,1) 
+    \item none of these \\
+\end{enumerate}
+
+
+\item The set of all points where the function $f(x)=\frac{x}{(1+|x|)}$ is differentiable, is \\
+\hfill{(1987-2marks)} 
+
+\begin{enumerate}
+    \item \((- \infty, \infty)\)
+    \item \([0, \infty)\)
+    \item \((- \infty,0)\) $\bigcup$ \((0, \infty)\)
+    \item (0, $\infty$)
+    \item None \\
+\end{enumerate}
+
+\item The function \\ $f(x)=\begin{cases}|x-3| & \text{,} x \geq 1 \\
+    \frac{x^2}{4}-\frac{3x}{2}+\frac{13}{4}, & \text{,} x<1 
+\end{cases}$,is \\ \hfill{(1988-2marks)} 
+\begin{enumerate}
+    \item continuous at x=1
+    \item differentiable at x=1
+    \item continuous at x=3
+    \item differentiable at x=3 \\ 
+\end{enumerate}
+
+\item If $f(x)$=$\frac{1}{2}x-1$, then on the interval $[0,\pi]$ \hfill{(1989-2marks)} 
+\begin{enumerate}
+    \item tan[f(x)] and $\frac{1}{f(x)}$ are both continuous
+    \item tan[f(x)] and $\frac{1}{f(x)}$ are both discontinuous
+    \item tan[f(x)] and $f^{-1}x$ are both continuous
+    \item tan[f(x)] is continuous but $\frac{1}{f(x)}$ is not \\
+\end{enumerate}
+
+
+\item The value of $\lim_{x\to0}{\frac{\sqrt{\frac{1}{2}(1-cos2x)}}{x}}$ \\
+\hfill{(1991-2marks)} 
+\begin{enumerate}
+    \item 1
+    \item -1
+    \item 0
+    \item none of these \\
+\end{enumerate}
+
+\item The following functions are continuous on (0,$\pi$) \hfill{(1991-2marks)} 
+\begin{enumerate}
+    \item tanx
+    \item $\int_{0}^{x}tsin\frac{1}{t}dt$ 
+    \item $\begin{cases} 1 & \text{,} 0<x\leq\frac{3\pi}{4} \\
+                2sin\frac{2}{9}x & \text{,} \frac{3\pi}{4}<x<\pi
+    
+\end{cases}$
+    \item $\begin{cases} xsinx & \text{,} 0<x\leq\frac{\pi}{2} \\
+                  \frac{\pi}{2}sin(\pi+x) & \text{,} \frac{\pi}{2}<x<\pi \\ 
+\end{cases}$
+\end{enumerate}
+
+\item Let $f(x)=\begin{cases} 0 & \text{,} x<0 \\
+                             x^2 & \text{,} x\leq0
+\end{cases}$ then for all x \hfill{(1994)} 
+
+\begin{enumerate}
+    \item $f^|$ is differentiable
+    \item f is differentiable
+    \item $f^|$ is continuous 
+    \item f is continuous
+\end{enumerate}
+
+
+\end{enumerate}
+
+\end{document}
