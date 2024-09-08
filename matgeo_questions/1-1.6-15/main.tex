@@ -1,0 +1,82 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide}
+\usepackage{listings}
+% \usepackage{gvv}
+\def\inputGnumericTable{}
+\usepackage[latin1]{inputenc}
+\usepackage{color}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{calc}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{ifthen}
+\usepackage{lscape}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+
+\title{1-1.6-15}
+\author{EE24BTECH11048-NITHIN.K}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\textbf{Question:} \\
+Find the value of m if the points $\brak{5, 1}$, $\brak{-2, -3}$ and $\brak{8, 2m}$ are collinear. \\
+\textbf{Solution:} \\
+\begin{table}[h!]    
+      \centering
+      \input{tables/table1.tex}
+      \caption{}
+\end{table} \\
+A, B, C are collinear if rank$\brak{M} = 1$ \\
+\textbf{note:}rank of matrix M = rank of matrix $M^T$ \\
+\begin{align}
+	M^T = \myvec{
+		-7 & -4 \\
+		3 & 2m-1}
+	\xleftrightarrow{\substack{R_2 = 3R_1 + 7R_2}}
+	\myvec{
+		-7 & -4 \\
+		0 & -19+14m} \\
+	\text{for the rank to be 1,} \\
+	-19+14m=0 \\
+	m=19/14
+\end{align}
+
+\end{document}
