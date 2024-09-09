@@ -59,25 +59,27 @@
 \textbf{Question:} \\
 Find the value of m if the points $\brak{5, 1}$, $\brak{-2, -3}$ and $\brak{8, 2m}$ are collinear. \\
 \textbf{Solution:} \\
-\begin{table}[h!]    
+\begin{table}[h!]   
       \centering
       \input{tables/table1.tex}
       \caption{}
 \end{table} \\
 A, B, C are collinear if rank$\brak{M} = 1$ \\
 \textbf{Note:} rank of matrix M = rank of matrix $M^T$ \\
-\begin{align}
-	M^T = \myvec{
-		-7 & -4 \\
-		3 & 2m-1}
-	\xleftrightarrow{\substack{R_2 = 3R_1 + 7R_2}}
-	\myvec{
-		-7 & -4 \\
-		0 & -19+14m} \\
-	\text{for the rank to be 1,} \\
-	-19+14m=0 \\
-	m=19/14
-\end{align}
+ \begin{align}
+	 M^T = \myvec{
+		 -7 & -4 \\
+		 3 & 2m-1}
+	 \xleftrightarrow{\substack{R_2 = 3R_1 + 7R_2}}
+	 \myvec{
+		 -7 & -4 \\
+		 0 & -19+14m}
+ \end{align}
+\text{for the rank to be 1,} \\
+ \begin{align}
+	 -19+14m=0 \\
+	 m=19/14
+ \end{align}
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\linewidth]{figs/Figure_1.png}
