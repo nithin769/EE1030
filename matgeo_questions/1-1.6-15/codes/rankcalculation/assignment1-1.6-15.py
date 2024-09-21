@@ -10,8 +10,8 @@ lib.calculateRank.restype = ctypes.c_int
 
 # Example matrix
 matrix = np.array([
-    [-7.0, -4.0],
-    [3.0, 1.71]
+    [-7, -4],
+    [3, 1.714286]
 ], dtype=np.float32)
 
 m, n = matrix.shape

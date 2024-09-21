@@ -28,9 +28,9 @@ int main() {
 		return 1;
 	}
 	fprintf(file, "x y\n");
-	fprintf(file, "%.02lf %.02lf\n", A[0][0],A[1][0]);
-	fprintf(file, "%.02lf %.02lf\n", B[0][0],B[1][0]);
-	fprintf(file, "%.02lf %.02lf\n", C[0][0],C[1][0]);
+	fprintf(file, "%.6lf %.6lf\n", A[0][0],A[1][0]);
+	fprintf(file, "%.6lf %.6lf\n", B[0][0],B[1][0]);
+	fprintf(file, "%.6lf %.6lf\n", C[0][0],C[1][0]);
 	fclose(file);
 	printf("Results have been written to values.dat\n");
 
