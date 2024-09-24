@@ -25,6 +25,11 @@ def customize_plot():
     plt.grid(True)#shows the grid
     plt.axis('equal')#ensures each unit on the x-axis is equal to that on y-axis
 
+# Example usage:
+# After plotting your data, call this function to apply the customizations:
+# customize_plot()
+# plt.show()
+
 def plot_points(points, labels):
     """
     Plots the given points and labels them with their coordinates.
@@ -44,6 +49,21 @@ def plot_points(points, labels):
                      xytext=(20, 5), # Distance from text to points (x, y)
                      ha='center') # Horizontal alignment can be left, right, or center
 
+
+data = np.genfromtxt('values.dat', delimiter=' ', names=True)
+x = data['x']
+y = data['y']
+A = np.array(([x[0], y[0]])).reshape(-1,1) 
+B = np.array(([x[1], y[1]])).reshape(-1,1)
+# Example usage:
+# A = np.array([1, 2])
+# B = np.array([4, 6])
+# C = np.array([8, 3])
+# points = np.block([[A, B, C]])
+# labels = ['A', 'B', 'C']
+# plot_points_with_labels(points, labels)
+
+
 def plot_line(P, Q):
     x_PQ = line_gen(P,Q)#GVV function
 
@@ -54,8 +74,4 @@ x = data['x']
 y = data['y']
 P = np.array(([x[0], y[0]])).reshape(-1,1)
 Q = np.array(([x[1], y[1]])).reshape(-1,1)
-points = np.block([[P,Q]])
-labels = ['P','Q']
 plot_line(P, Q)
-plot_points(points,labels)
-plt.show()
