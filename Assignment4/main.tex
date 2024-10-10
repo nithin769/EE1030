@@ -1,0 +1,129 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide}
+\usepackage{listings}
+% \usepackage{gvv}
+\def\inputGnumericTable{}
+\usepackage[latin1]{inputenc}
+\usepackage{color}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{calc}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{ifthen}
+\usepackage{lscape}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+
+\title{Assignment-4}
+\author{EE24BTECH11048-NITHIN.K} 
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\begin{enumerate}
+\section{SECTION-A}
+%16
+\item If $y = m_1x + c_1$ and $y = m_2x + c_2$, $m_1 \neq m_2$ are two common tangents of circle $x^2+y^2=2$ and parabola $y^2=x$, then the value of $8|m_1m_2|$ is equal to
+	\begin{enumerate}
+		\item $3+4\sqrt{2}$
+		\item $-5+6\sqrt{2}$
+		\item $-4+3\sqrt{2}$
+		\item $7+6\sqrt{2}$
+	\end{enumerate}
+%17
+\item Let Q be the mirror image of the point $P\brak{1,0,1}$ with respect to the plane S : $x+y+z=5$. If a line L passing through $\brak{1,-1,-1}$, parallel to the line PQ meets the plane S at R, then $QR^2$ is equal to:
+	\begin{enumerate}
+		\item 2
+		\item 5
+		\item 7
+		\item 11
+	\end{enumerate}
+%18
+\item If the solution curve $y=y\brak{x}$ of the differential equation $y^2dx + \brak{x^2-xy+y^2}dy = 0$, which passes through the point $\brak{1,1}$ and intersects the line $y=\sqrt{3}x$ at the point $\brak{\alpha,\sqrt{3}\alpha}$, then the value of $\ln\brak{\sqrt{3}\alpha}$ is equal to
+	\begin{enumerate}
+		\item $\frac{\pi}{3}$
+		\item $\frac{\pi}{2}$
+		\item $\frac{\pi}{12}$
+		\item $\frac{\pi}{6}$
+	\end{enumerate}
+%19
+\item Let $x=2t$, $y=\frac{t^2}{3}$ be a conic. Let S be the focus and B be the point on the axis of the conic such that $SA \perp BA$, where A is any point on the conic. If k is the ordinate of the centroid of $\triangle SAB$, then $\lim_{t \to 1}{k}$ is equal to
+	\begin{enumerate}
+		\item $\frac{17}{18}$
+		\item $\frac{19}{18}$
+		\item $\frac{11}{18}$
+		\item $\frac{13}{18}$
+	\end{enumerate}
+%20
+\item Let a circle C in complex plane pass through the points $z_1=3+4i$, $z_2=4+3i$ and $z_3=5i$. If $z\brak{\neq z_1}$ is a point on C such that the line through z and $z_1$ is perpendicular to the line through $z_2$ and $z_3$, then arg\brak{z} is equal to :
+	\begin{enumerate}
+		\item $\tan^{-1}\brak{\frac{2}{\sqrt{5}}} - \pi$
+		\item $\tan^{-1}\brak{\frac{24}{7}} - \pi$
+		\item $\tan^{-1}\brak{3} - \pi$
+		\item $\tan^{-1}\brak{\frac{3}{4}} - \pi$
+	\end{enumerate}
+\end{enumerate}
+\begin{enumerate}
+\section{SECTION-B}
+%1
+\item Let $C_r$ denote the binomial coefficient of $x^r$ in the expansion of $\brak{1 + x}^{10}$. If $\alpha, \beta \in R$. $C_1 + 3\cdot2C_2 + 5\cdot3C_3 + ...$ upto 10 terms = $\frac{\alpha\times2^{11}}{2^{\beta} - 1}\brak{C_0 +\frac{C_1}{2} + \frac{C_2}{3} + ...upto 10 terms}$ then the value of $\alpha + \beta$ is equal to
+%2
+\item The number of 3-digit odd numbers, whose sum of digits is a multiple of 7, is
+%3
+\item Let $\theta$ be the angle between the vectors $\vec{a}$ and $\vec{b}$, where $|\vec{a}|=4,|\vec{b}|=3$, $\theta \in \brak{\frac{\pi}{4},\frac{\pi}{3}}$. Then $|\brak{\vec{a}-\vec{b}} x \brak{\vec{a}+\vec{b}}|^2 + 4\brak{\vec{a}\cdot\vec{b}}^2$ is equal to
+%4
+\item Let the abscissae of the two points P and Q be the roots of $2x^2 - rx + p = 0$ and the ordinates of P and Q be the roots of $x^2-sx-q = 0$. If the equation of the circle described on PQ as diameter is $2\brak{x^2 + y^2}$ - 11x -14y - 22 =0, then 2r + s - 2q + p is equal to
+%5
+\item The number of values of x in the interval $\brak{\frac{\pi}{4},\frac{7\pi}{4}}$ for which $14\cosec^2x - 2\sin^2x = 21 - 4\cos^2x$ holds, is
+%6
+\item For a natural number n, let $a_n = 19^n - 12^n$. Then, the value of $\frac{31\alpha_9 -\alpha_10}{57\alpha_8}$ is
+%7
+\item Let f : $R \rightarrow R$ be a function defined by $f\brak{x} = \brak{2\brak{1-\frac{x^{25}}{2}}\brak{2+x^{25}}}^{\frac{1}{50}}$. If the function $g\brak{x} = f\brak{f\brak{f\brak{x}}} + f\brak{f\brak{x}}$, then the greatest integer less than or equal to g\brak{1} is
+%8
+\item Let the lines \\
+	$L_1$ : $\vec{r} = \lambda\brak{\vec{i}+2\vec{j}+3\vec{k}}$, $\lambda \in R$ \\
+	$L_2$ : $\vec{r} = \brak{\vec{i} + 3\vec{j} + \vec{k}} + \mu\brak{\vec{i} + \vec{j} +5\vec{k}}$ ; $\mu \in R$ \\
+	intersect at the point S. If a plane $ax+by-z+d=0$ passes through S and is parallel to both the lines $L_1 andL_2$, then the value of a+b+d is equal to
+%9
+\item Let A be a 3 x 3 matrix having entries from the set $\cbrak{-1,0,1}$. The number of all such matrices A having sum of all entries equal to 5, is
+%10
+\item The greatest integer less than or equal to the sum of first 100 terms of the sequence $\frac{1}{3},\frac{5}{9},\frac{19}{27},\frac{65}{81}$,... is equal to
+
+\end{enumerate}
+\end{document}
