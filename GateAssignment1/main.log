@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.5)  24 OCT 2024 00:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.5)  26 OCT 2024 10:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1643,11 +1643,87 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 \CommentStream=\write4
 
 Excluding comment 'comment')
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks53
-\inpenc@posthook=\toks54
+(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks53
+\t@pgfplots@tokb=\toks54
+\t@pgfplots@tokc=\toks55
+\pgfplots@tmpa=\dimen391
+\c@pgfplots@coordindex=\count385
+\c@pgfplots@scanlineindex=\count386
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
+.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_loader.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructure.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructureext.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
+.code.tex
+\c@pgfplotsarray@tmp=\count387
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
+x.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
+d.code.tex
+\c@pgfplotstable@counta=\count388
+\t@pgfplotstable@a=\toks56
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
+de.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
+fshading.code.tex
+\c@pgfplotslibrarysurf@no=\count389
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
+shading.pgfsys-pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
+e.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.
+tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.co
+ntourlua.code.tex)
+\pgfplots@numplots=\count390
+\pgfplots@xmin@reg=\dimen392
+\pgfplots@xmax@reg=\dimen393
+\pgfplots@ymin@reg=\dimen394
+\pgfplots@ymax@reg=\dimen395
+\pgfplots@zmin@reg=\dimen396
+\pgfplots@zmax@reg=\dimen397
+)) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks57
+\inpenc@posthook=\toks58
 (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2021/02/14 v1.3d Input encoding file
 ))
@@ -1658,29 +1734,14 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-) (./main.aux
-
-LaTeX Warning: Label `graph' multiply defined.
-
-
-LaTeX Warning: Label `graph' multiply defined.
-
-
-LaTeX Warning: Label `graph' multiply defined.
-
-
-LaTeX Warning: Label `graph' multiply defined.
-
-
-LaTeX Warning: Label `graph' multiply defined.
-
-)
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 48.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 48.
- (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 48.
@@ -1816,17 +1877,17 @@ or `english'. on input line 48.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count385
-\scratchdimen=\dimen391
+\scratchcounter=\count391
+\scratchdimen=\dimen398
 \scratchbox=\box136
-\nofMPsegments=\count386
-\nofMParguments=\count387
-\everyMPshowfont=\toks55
-\MPscratchCnt=\count388
-\MPscratchDim=\dimen392
-\MPnumerator=\count389
-\makeMPintoPDFobject=\count390
-\everyMPtoPDFconversion=\toks56
+\nofMPsegments=\count392
+\nofMParguments=\count393
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count394
+\MPscratchDim=\dimen399
+\MPnumerator=\count395
+\makeMPintoPDFobject=\count396
+\everyMPtoPDFconversion=\toks60
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
@@ -1865,7 +1926,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count391
+\c@section@level=\count397
 )
 LaTeX Info: Redefining \ref on input line 48.
 LaTeX Info: Redefining \pageref on input line 48.
@@ -1875,10 +1936,13 @@ LaTeX Info: Redefining \nameref on input line 48.
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-\c@lstlisting=\count392
+\c@lstlisting=\count398
+
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 60
 .
-
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
@@ -1912,12 +1976,6 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-<figs/fig1.png, id=35, 249.93375pt x 230.8625pt>
-File: figs/fig1.png Graphic file (type png)
-<use figs/fig1.png>
-Package pdftex.def Info: figs/fig1.png  used on input line 93.
-(pdftex.def)             Requested size: 109.25969pt x 100.92107pt.
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -1925,67 +1983,48 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2 <./figs/fig1.png>]
-<figs/fig2.png, id=95, 321.2pt x 140.525pt>
-File: figs/fig2.png Graphic file (type png)
-<use figs/fig2.png>
-Package pdftex.def Info: figs/fig2.png  used on input line 171.
-(pdftex.def)             Requested size: 145.67589pt x 63.73526pt.
-<figs/fig3.png, id=96, 321.2pt x 127.47626pt>
-File: figs/fig3.png Graphic file (type png)
-<use figs/fig3.png>
-Package pdftex.def Info: figs/fig3.png  used on input line 185.
-(pdftex.def)             Requested size: 145.67589pt x 57.81699pt.
+ [2]
+LaTeX Font Info:    Font shape `TS1/txr/b/n' in size <10> not available
+(Font)              Font shape `TS1/txr/bx/n' tried instead on input line 275.
+LaTeX Font Info:    Font shape `TS1/txr/b/n' in size <7> not available
+(Font)              Font shape `TS1/txr/bx/n' tried instead on input line 275.
+LaTeX Font Info:    Font shape `TS1/txr/b/n' in size <5> not available
+(Font)              Font shape `TS1/txr/bx/n' tried instead on input line 275.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3 <./figs/fig2.png>]
-<figs/fig4.png, id=129, 321.2pt x 127.47626pt>
-File: figs/fig4.png Graphic file (type png)
-<use figs/fig4.png>
-Package pdftex.def Info: figs/fig4.png  used on input line 199.
-(pdftex.def)             Requested size: 145.67589pt x 57.81699pt.
-<figs/fig5.png, id=130, 321.2pt x 127.47626pt>
-File: figs/fig5.png Graphic file (type png)
-<use figs/fig5.png>
-Package pdftex.def Info: figs/fig5.png  used on input line 213.
-(pdftex.def)             Requested size: 145.67589pt x 57.81699pt.
-<figs/fig6.png, id=131, 297.11pt x 117.43875pt>
-File: figs/fig6.png Graphic file (type png)
-<use figs/fig6.png>
-Package pdftex.def Info: figs/fig6.png  used on input line 227.
-(pdftex.def)             Requested size: 145.67589pt x 57.58311pt.
-
+ [3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4 <./figs/fig3.png> <./figs/fig4.png> <./figs/fig5.png>] [5 <./figs/fig6.png>
-]
-(./main.aux)
+ [4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: There were multiply-defined labels.
-
+ [5]
+[6] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6178CB30495FAC689EC17EAE873B647E;231.
  ) 
 Here is how much of TeX's memory you used:
- 49830 strings out of 478287
- 1163832 string characters out of 5849290
- 1630483 words of memory out of 5000000
- 67114 multiletter control sequences out of 15000+600000
- 535811 words of font info for 164 fonts, out of 8000000 for 9000
+ 60775 strings out of 478287
+ 1529151 string characters out of 5849290
+ 2130429 words of memory out of 5000000
+ 77946 multiletter control sequences out of 15000+600000
+ 554650 words of font info for 215 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 106i,7n,107p,425b,989s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,20n,107p,727b,2433s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tx
-fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 209290 bytes).
+e/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txf
+onts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txbsy.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
+s/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (6 pages, 72339 bytes).
 PDF statistics:
- 222 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 98 named destinations out of 1000 (max. 500000)
- 147 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 223 PDF objects out of 1000 (max. 8388607)
+ 179 compressed objects within 2 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 117 words of extra memory for PDF output out of 10000 (max. 10000000)
 
