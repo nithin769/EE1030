@@ -1,0 +1,129 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+
+\title{GateAssignment4}
+\author{EE24BTECH11048-NITHIN.K} 
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\begin{enumerate}
+\section{Q.26 to Q.55 carry two marks each}
+
+%1
+\item The value of definite integral $\int_{0}^{\pi}xsinxdx$ is \underline{\hspace{1cm}}.
+%2
+\item Use Newton-Raphson method to solve the equation: $xe^x = 1$. Begin with the initial guess $x_0 = 0.5$. The solution after one step is $x = \underline{\hspace{1cm}}$
+%3
+\item A wall of thickness 5 mm is heated by a hot gas flowing along the wall. The gas is at a temperature of 3000 K, and the convective heat transfer coefficient is 160 W/$m^2$K. The wall thermal conductivity is 40 W/mK. If the colder side of the wall is held at 500 K, the temperature of the side exposed to the hot gas is \underline{\hspace{1cm}} K.
+%4
+\item A launch vehicle has a main rocket engine with two identical strap-on motors, all of which fire simultaneously during the operation. The main engine delivers a thrust of 6300 kN with a specific impulse of 428 s. Each strap-on motor delivers a thrust of 12000 kN with specific impulse of 292 s. The acceleration due to gravity is 9.81 m/$s^2$. The effective (combined) specific impulse of the vehicle is \underline{\hspace{1cm}} s.
+%5
+\item A substance experiences an entropy change of $\Delta s > 0$ in a quasi-steady process. The rise in temperature $\brak{\text{corresponding to the entropy change }\Delta s}$ is highest for the following process:
+\begin{enumerate}
+\item isenthalpic
+\item isobaric
+\item isochoric
+\item isothermal
+\end{enumerate}
+%6
+\item In a particular rocket engine, helium propellant is heated to 6000 K and 95\% of its total enthalpy is recovered as kinetic energy of the nozzle exhaust. Consider helium to be a calorically perfect gas with specific heat at constant pressure of 5200 J/kgK. The exhaust velocity for such a rocket for an optimum expansion is \underline{\hspace{1cm}}.
+%7
+\item An aircraft is flying level in the North direction at a velocity of 55 m/s under cross wind from East to West of 5 m/s. For the given aircraft $C_{n\beta} = 0.012/deg$ and $C_{n\delta r} = -0.0072/deg$, where $\delta$r is the rudder deflection and $\beta$ is the side slip angle. The rudder deflection exerted by pilot is \underline{\hspace{1cm}} degrees.
+%8
+\item An aircraft weighing 10000 N is flying level at 100 m/s and it is powered by a jet engine. The thrust required for level flight is 1000 N. The maximum possible thrust produced by the jet engine is 5000N. The minimum time required to climb 1000 m, when flight speed is 100 m/s, is \underline{\hspace{1cm}} s.
+%9
+\item The aircraft velocity $\brak{\text{m/s}}$ components in body axes are given as $\sbrak{u, v, w} = \sbrak{100, 10, 10}$. The air velocity $\brak{\text{m/s}}$, angle of attack $\brak{\text{deg}}$ and sideslip angle $\brak{\text{deg}}$ in that order are
+\begin{enumerate}
+\item $\sbrak{120, 0.1, 0.1}$
+\item $\sbrak{100, 0.1, 0.1}$
+\item $\sbrak{100.95, 0.1, 5.73}$
+\item $\sbrak{100.995, 5.71, 5.68}$
+\end{enumerate}
+%10
+\item The Dutch roll motion of the aircraft is described by following relationship \\
+$\myvec{\Delta\beta \\
+        \Delta r} = \myvec{-0.26 & -1 \\
+	                   4.49 & -0.76}\myvec{\Delta\beta \\
+			                       \Delta r}$ \\
+The undamped natural frequency $\brak{\text{rad/s}}$ and damping ratio for the Dutch roll motion in that order are:
+\begin{enumerate}
+\item 4.68, 1.02
+\item 4.49, 1.02
+\item 2.165, 0.235
+\item 2.165, 1.02
+\end{enumerate}
+%11
+\item A glider weighing 3300 N is flying at 1000 m above sea level. The wing area is 14.1 $m^2$ and the air density is 1.23 kg/$m^3$. Under zero wind conditions, the velocity for maximum range is \underline{\hspace{1cm}} m/s.
+	\begin{table}[H]
+		\centering
+		\input{tables/table.tex}
+	\end{table}
+%12
+\item A rocket, with a total lift-off mass of 10000 kg, moves vertically upward from rest under a constant gravitational acceleration of 9.81 m/$s^2$. The propellant mass of 8400 kg burns at a constant rate of 1200 kg/s. If the specific impulse of the rocket engine is 240 s, neglecting drag, the burnout velocity in m/s is
+\begin{enumerate}
+\item 3933.7
+\item 4314.6
+\item 4245.9
+\item 4383.3
+\end{enumerate}
+%13
+\item A satellite is injected at an altitude of 350 km above the Earths surface, with a velocity of 8.0 km/s parallel to the local horizon. $\brak{\text{Earth radius=6378 km}, \mu_E \brak{\text{GM=Gravitational
+	constant x Earth mass}} = 3.986\times10^{14} m^3s^{-2}} $. The satellite
+\begin{enumerate}
+\item forms a circular orbit.
+\item forms an elliptic orbit.
+\item escapes from Earths gravitational field.
+\item falls back into earth.
+\end{enumerate}
+
+\end{enumerate}
+\end{document}
