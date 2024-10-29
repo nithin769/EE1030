@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.5)  29 OCT 2024 21:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.5)  29 OCT 2024 23:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1378,15 +1378,20 @@ Package chngcntr Info: \counterwithout already defined.
 \c@proposition=\count376
 \c@lemma=\count377
 \c@example=\count378
-)
+) (./gvv.sty
 
-! LaTeX Error: File `gvv.sty' not found.
+! LaTeX cmd Error: Invalid argument type 'g' in command '\system' (requires
+(cmd)              xparse).
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
-
-Enter file name: 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.110 }
+       
+? 
+\c@matchleft=\count379
+\c@matchright=\count380
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -1624,10 +1629,10 @@ LaTeX Font Info:    Redeclaring math symbol \backepsilon on input line 265.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count379
-\c@ALC@line=\count380
-\c@ALC@rem=\count381
-\c@ALC@depth=\count382
+\c@ALC@unique=\count381
+\c@ALC@line=\count382
+\c@ALC@rem=\count383
+\c@ALC@depth=\count384
 \ALC@tlm=\skip81
 \algorithmicindent=\skip82
 )
@@ -1796,16 +1801,16 @@ or `english'. on input line 49.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count383
+\scratchcounter=\count385
 \scratchdimen=\dimen391
 \scratchbox=\box136
-\nofMPsegments=\count384
-\nofMParguments=\count385
+\nofMPsegments=\count386
+\nofMParguments=\count387
 \everyMPshowfont=\toks55
-\MPscratchCnt=\count386
+\MPscratchCnt=\count388
 \MPscratchDim=\dimen392
-\MPnumerator=\count387
-\makeMPintoPDFobject=\count388
+\MPnumerator=\count389
+\makeMPintoPDFobject=\count390
 \everyMPtoPDFconversion=\toks56
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1845,7 +1850,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count389
+\c@section@level=\count391
 )
 LaTeX Info: Redefining \ref on input line 49.
 LaTeX Info: Redefining \pageref on input line 49.
@@ -1855,202 +1860,88 @@ LaTeX Info: Redefining \nameref on input line 49.
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-\c@lstlisting=\count390
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 62
-.
+\c@lstlisting=\count392
 
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 61
+.
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 6
-2.
+1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 6
-2.
+1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
-2.
+1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-! Undefined control sequence.
-<recently read> \brak 
-                      
-l.70 ...dy process. The rise in temperature $\brak
-                                                  {\text{corresponding to th...
+Underfull \hbox (badness 10000) in paragraph at lines 65--84
 
-? 
-! Undefined control sequence.
-<recently read> \brak 
-                      
-l.84 \item The aircraft velocity $\brak
-                                       {\text{m/s}}$ components in body axes...
-
-? 
-! Undefined control sequence.
-<recently read> \sbrak 
-                       
-l.84 ...mponents in body axes are given as $\sbrak
-                                                  {u, v, w} = \sbrak{100, 10...
-
-? 
-! Undefined control sequence.
-l.84 ...xes are given as $\sbrak{u, v, w} = \sbrak
-                                                  {100, 10, 10}$. The air ve...
-
-? 
-! Undefined control sequence.
-<recently read> \brak 
-                      
-l.84 ...rak{100, 10, 10}$. The air velocity $\brak
-                                                  {\text{m/s}}$, angle of at...
-
-? 
-! Undefined control sequence.
-<recently read> \brak 
-                      
-l.84 ...\brak{\text{m/s}}$, angle of attack $\brak
-                                                  {\text{deg}}$ and sideslip...
-
-? 
-! Undefined control sequence.
-<recently read> \brak 
-                      
-l.84 ...rak{\text{deg}}$ and sideslip angle $\brak
-                                                  {\text{deg}}$ in that orde...
-
-? 
-! Undefined control sequence.
-<recently read> \sbrak 
-                       
-l.86 \item $\sbrak
-                  {120, 0.1, 0.1}$
-? 
-! Undefined control sequence.
-<recently read> \sbrak 
-                       
-l.87 \item $\sbrak
-                  {100, 0.1, 0.1}$
-? 
-! Undefined control sequence.
-<recently read> \sbrak 
-                       
-l.88 \item $\sbrak
-                  {100.95, 0.1, 5.73}$
-? 
-! Undefined control sequence.
-<recently read> \sbrak 
-                       
-l.89 \item $\sbrak
-                  {100.995, 5.71, 5.68}$
-? 
-! Undefined control sequence.
-<recently read> \myvec 
-                       
-l.93 $\myvec
-            {\Delta\beta \\
-? 
-! Undefined control sequence.
-l.94         \Delta r} = \myvec
-                               {-0.26 & -1 \\
-? 
-! Misplaced alignment tab character &.
-l.94         \Delta r} = \myvec{-0.26 &
-                                        -1 \\
-? 
-! Misplaced alignment tab character &.
-l.95 	                   4.49 &
-                                -0.76}\myvec{\Delta\beta \\
-? 
-! Undefined control sequence.
-l.95 	                   4.49 & -0.76}\myvec
-                                            {\Delta\beta \\
-? 
-! Undefined control sequence.
-<recently read> \brak 
-                      
-l.97 The undamped natural frequency $\brak
-                                          {\text{rad/s}}$ and damping ratio ...
-
-? 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-] (./tables/table.tex
-! Undefined control sequence.
-l.4             $\alpha \brak
-                             {\text{deg}}$ & $C_L$ & $C_D$ & $C_L$/$C_D$ \\
-? 
-)
-! Undefined control sequence.
-<recently read> \brak 
-                      
-l.119 ...m/s parallel to the local horizon. $\brak
-                                                  {\text{Earth radius=6378 k...
-
-? 
-! Undefined control sequence.
-l.119 ...{\text{Earth radius=6378 km}, \mu_E \brak
-                                                  {\text{GM=Gravitational
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--122
-[]\OT1/txr/m/n/10 A satel-lite is in-jected at an al-ti-tude of 350 km above th
-e Earths
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--122
-\OT1/txr/m/n/10 sur-face, with a ve-loc-ity of 8.0 km/s par-al-lel to the lo-ca
-l hori-zon.
- []
+Underfull \vbox (badness 1688) has occurred while \output is active []
 
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-Overfull \hbox (21.16138pt too wide) in paragraph at lines 119--122
-[]$\OT1/txr/m/n/10 .
- []
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[2] (./main.aux)
+ [2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+[5] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3823FC9FDB55302AF2F01FAC6AD7296C;226.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49649 strings out of 478287
- 1161849 string characters out of 5849290
- 1633305 words of memory out of 5000000
- 67006 multiletter control sequences out of 15000+600000
- 534177 words of font info for 161 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 106i,14n,107p,466b,966s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50652 strings out of 478287
+ 1190783 string characters out of 5849290
+ 1646413 words of memory out of 5000000
+ 68015 multiletter control sequences out of 15000+600000
+ 533123 words of font info for 159 fonts, out of 8000000 for 9000
+ 1144 hyphenation exceptions out of 8191
+ 106i,13n,107p,546b,1255s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tx
-fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 52410 bytes).
+1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txf
+onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (5 pages, 58230 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
- 38 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 119 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
+ 32 named destinations out of 1000 (max. 500000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,254 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+
+\title{GateAssignment5}
+\author{EE24BTECH11048-NITHIN.K} 
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\begin{enumerate}
+%1
+\item The bus admittance for a power system network is \\
+\begin{align*}
+	\myvec{-j39.9 & j20 & j20 \\
+	j20 & -j39.9 & j20 \\
+	j20 & j20 & -j39.9}pu.
+\end{align*}
+There is a transmission line, connected between buses 1 and 3, which is represented by the circuit shown in figure. \\
+		\begin{figure}[H]
+			\centering
+			\resizebox{1\textwidth}{!}{%
+				\begin{circuitikz}
+					\tikzstyle{every node}=[font=\normalsize]
+					\draw (0.75,13.25) to[L ] (4.75,13.25);
+					\draw (1.5,13.25) to[curved capacitor] (1.5,12);
+					\draw (4.25,13.25) to[curved capacitor] (4.25,12);
+					\draw [short] (0.75,12) -- (4.75,12);
+					\node [font=\normalsize] at (3,14.5) {Reactance};
+					\node [font=\normalsize] at (3,14) {is 0.05 pu};
+					\node [font=\normalsize] at (-0.25,12.75) {Susceptance};
+					\node [font=\normalsize] at (6,12.75) {Susceptance};
+					\node [font=\normalsize] at (-0.25,12.25) {is 0.05 pu};
+					\node [font=\normalsize] at (6,12.25) {is 0.05 pu};
+				\end{circuitikz}
+				}%
+		\end{figure}
+If this transmission line is removed from service, what is the modified bus admittance matrix?
+		\begin{enumerate}
+			\item \myvec{-j19.9 & j20 & 0 \\
+				j20 & -j39.9 & j20 \\
+				0 & j20 & -j19.9}pu
+			\item \myvec{-j39.95 & j20 & 0 \\
+				j20 & -j39.9 & j20 \\
+				0 & j20 & -j39.95}pu
+			\item \myvec{-j19.95 & j20 & 0 \\
+				j20 & -j39.9 & j20 \\
+				0 & j20 & -j19.95}pu
+			\item \myvec{-j19.95 & j20 & j20 \\
+				j20 & -j39.9 & j20 \\
+				j20 & j20 & -j19.95}pu
+		\end{enumerate}
+%2
+\item The switch in the figure below was closed for a long time. It is opened at $t = 0$. The current in the inductor of 2H for $t \geq 0$, is
+	\begin{figure}[H]
+		\centering
+		\resizebox{1\textwidth}{!}{%
+			\begin{circuitikz}
+				\tikzstyle{every node}=[font=\normalsize]
+				\draw (1.25,14.25) to[american voltage source] (1.25,11);
+				\draw (1.25,14.25) to[R] (3,14.25);
+				\draw (3,14.25) to[opening switch] (4,14.25);
+				\draw (4,14.25) to[R] (4,11);
+				\draw (4,11) to[R] (7.25,14.25);
+				\draw (4,14.25) to[R] (7.25,14.25);
+				\draw (7.25,14.25) to[R] (7.25,11);
+				\draw [short] (1.25,11) -- (7.25,11);
+				\draw [short] (7.25,11) -- (8.5,11);
+				\draw [short] (7.25,14.25) -- (8.5,14.25);
+				\draw (8.5,14.25) to[L ] (8.5,11);
+				\node [font=\normalsize] at (0.25,12.5) {50 V};
+				\node [font=\normalsize] at (3.25,12.75) {8 $\Omega$};
+				\node [font=\normalsize] at (2.25,14.75) {6 $\Omega$};
+				\node [font=\normalsize] at (5.5,14.75) {8 $\Omega$};
+				\node [font=\normalsize] at (5.25,13.25) {32 $\Omega$};
+				\node [font=\normalsize] at (6.5,12.5) {32 $\Omega$};
+				\node [font=\normalsize] at (9.25,12.75) {2H};
+			\end{circuitikz}
+			}%
+	\end{figure}
+	\begin{enumerate}
+		\item $2.5e^{-4t}$
+		\item $5e^{-4t}$
+		\item $2.5e^{-0.25t}$
+		\item $5e^{-0.25t}$
+	\end{enumerate}
+%3
+\item Only one of the real roots of $f\brak{x} = x^6 - x - 1$ lies in the interval $1 \leq x \leq 2$ and bisection method is used to find its value. For achieving an accuracy of 0.001, the required minimum number of iterations is \underline{\hspace{1cm}}.
+%4
+\item In the circuit shown below, the maximum power transfered to the resistor R is \underline{\hspace{1cm}} W.
+	\begin{figure}[H]
+		\centering
+		\resizebox{1\textwidth}{!}{%
+			\begin{circuitikz}
+				\tikzstyle{every node}=[font=\normalsize]
+				\draw (1.25,14.75) to[american voltage source] (1.25,11.5);
+				\draw (1.25,14.75) to[R] (4,14.75);
+				\draw (4,14.75) to[R] (4,11.5);
+				\draw (6.25,14.75) to[american voltage source] (4,14.75);
+				\draw (6.25,14.75) to[R] (6.25,11.5);
+				\draw (4.5,16) to[R] (5.75,16);
+				\draw [short] (4.5,16) -- (4.5,14.75);
+				\draw [short] (5.75,16) -- (5.75,14.75);
+				\draw (7.5,14.75) to[american current source] (7.5,11.5);
+				\draw [short] (1.25,11.5) -- (7.5,11.5);
+				\draw [short] (6.25,14.75) -- (7.5,14.75);
+				\node [font=\normalsize] at (5.25,16.5) {3 $\Omega$};
+				\node [font=\normalsize] at (2.5,15.25) {5 $\Omega$};
+				\node [font=\normalsize] at (0.5,13) {5V};
+				\node [font=\normalsize] at (3.5,13.25) {R};
+				\node [font=\normalsize] at (5.25,14) {6V};
+				\node [font=\normalsize] at (5.5,13) {5 $\Omega$};
+				\node [font=\normalsize] at (8.25,13) {2A};
+			\end{circuitikz}
+			}%
+	\end{figure}
+%5
+\item The magnitude of flux density $\brak{\text{B}}$ in micro Teslas $\brak{\mu \text{T}}$, at the center of a loop of wire wound as a regular hexagon of side length 1 m carrying a cuurent $\brak{\text{I = 1 A}}$, and placed in vaccum as shown in the figure is \underline{\hspace{1cm}}. $\brak{\text{Give the answer upto two decimal places.}}$
+	\begin{figure}[H]
+		\centering
+		\resizebox{1\textwidth}{!}{%
+			\begin{circuitikz}
+				\tikzstyle{every node}=[font=\normalsize]
+				\draw [short] (1,13.5) -- (2.25,15.5);
+				\draw [short] (2.25,15.5) -- (4.75,15.5);
+				\draw [short] (4.75,15.5) -- (6,13.75);
+				\draw [short] (1,13.5) -- (2.5,11.75);
+				\draw [short] (5,11.75) -- (6,13.75);
+				\draw [short] (2.5,11.75) -- (3.75,11.75);
+				\draw [short] (5,11.75) -- (4.25,11.75);
+				\draw [->, >=Stealth] (3.75,10.75) -- (3.75,11.75);
+				\draw [->, >=Stealth] (4.25,11.75) -- (4.25,10.75);
+				\node [font=\normalsize] at (3.25,11) {I};
+				\node at (3.5,13.75) [circ] {};
+			\end{circuitikz}
+			}%
+	\end{figure}
+%6
+\item A 375 W, 230 V, 50 Hz, capacitor start single-phase induction motor has the following constants for the main and auxillary windings $\brak{\text{at starting}}$: $Z_m = \brak{12.50 + j15.75} \Omega \brak{ \text{main winding}}$, $ Z_a = \brak{24.50 + j12.75} \Omega \brak{ \text{auxillary winding}}$. Neglecting the magnetizing branch, the value of the capacitance $\brak{\text{in } \mu \text{F}}$ to be added in series with the auxillary winding to obtain maximum torque at starting is \underline{\hspace{1cm}}.
+%7
+\item Two parallel connected, three-phase, 50 Hz, 11 kV, star-connected synchronous condensors. They together supply 50 MVAR to a 11 kV grid. Current supplied by both the machines are equal. Synchronous reactances of machine A and machine B are $1 \Omega$ and $3 \Omega$, respectively. Assuming the magnetic circuit to be linear, the ratio of exitation curent of machine A to machine B is \underline{\hspace{1cm}}.
+%8
+\item A 220 V DC series monitor runs drawing a current of 30 A from the supply. Armature and field circuit resistances are $0.4 \Omega$ and $0.1 \Omega$, respectively. The load torque varies as the square of the speed. The flux in the motor may be taken as being proportional to the armature current. To reduce the speed of the motor by 50\%, the resistance in ohms that should be added in series with the armature is \underline{\hspace{1cm}}. $\brak{\text{Give the answer upto two decimal places.}}$
+%9
+\item A three-phase, three winding $\delta/\delta/\text{Y}$ $\brak{1.1 \text{kV}/6.6 \text{kV}/400 \text{V}}$ transformer is energized from AC mains at the 1.1 kV side. It supplies 900 kVA load at 0.8 power factor lag from the 6.6 kV winding and 300 kVA load at 0.6 power factor lag from the 400 V winding. The RMS line current in ampere drawn by the 1.1 kV winding from the mains is \underline{\hspace{1cm}}. $\brak{\text{Give the answer upto two decimal places.}}$
+%10
+\item A seperately excited DC generator supplies 150 A to a 145 V DC grid. The generator is running at 800 RPM. The armature resistance of the generator is $0.1 \Omega$. If the speed of the generator is increased to 100 RPM, the current in amperes supplied by the generator to the DC grid is \underline{\hspace{1cm}}. $\brak{\text{Give the answer upto two decimal places.}}$
+%11
+\item For a system having transfer function $G\brak{s} = \frac{-s + 1}{s + 1}$, a unit step input is applied at time $t = 0$. The value of the response of the system at $t = 1.5$ sec $\brak{\text{rounded off to three decimal places}}$ is \underline{\hspace{1.5cm}}
+%12
+\item Consider a causal and stable LTI system with rational transfer function $H\brak{z}$, whose corresponding impulse response begins at $n = 0$. Furthermore, $H\brak{1} = \frac{5}{4}$. The poles of $H\brak{z}$ are $p_k = \frac{1}{\sqrt{2}} exp\brak{j\frac{\brak{2k - 1}\pi}{4}}$ for $k = 1, 2, 3, 4$. The zeros of $H\brak{z}$ are all at $z = 0$. Let $g\sbrak{n} = j^nh\sbrak{n}$. The value of $g\sbrak{8}$ equals \underline{\hspace{1cm}}. $\brak{\text{Give the answer upto three decimal places.}}$
+%13
+\item The circuit shown in the figure uses matched transistors with a thermal voltage $V_T = 25$ mV. The base currents of the transistors are negligilble. The value of the resistance R in k$\Omega$ that is required to provide 1 $\mu$ A bias current for the differential amplifier block shown is \underline{\hspace{1cm}}. $\brak{\text{Give the answer upto one decimal place.}}$
+	\begin{figure}[H]
+		\centering
+		\resizebox{1\textwidth}{!}{%
+			\begin{circuitikz}
+				\tikzstyle{every node}=[font=\normalsize]
+				\node at (3.75,14.5) [circ] {};
+				\draw (3.75,14.5) to[short, -o] (3.75,15.25) ;
+				\draw [short] (1.25,14.5) -- (6,14.5);
+				\draw (1.25,14.5) to[R] (1.25,12);
+				\node at (1.25,12) [circ] {};
+				\draw [short] (1.25,12) -- (2.75,12);
+				\draw [short] (2.75,12) -- (2.75,10.75);
+				\draw [->, >=Stealth] (1.25,12) -- (1.25,11.25);
+				\draw [short] (1.25,11.25) -- (1.25,11);
+				\draw [short] (1.25,10.5) -- (1.25,8.75);
+				\draw [short] (2.25,10.75) -- (3.75,10.75);
+				\draw [short] (6,14.5) -- (6,13.75);
+				\draw  (4.5,13.75) rectangle (7.5,12.5);
+				\draw [->, >=Stealth] (6,12.5) -- (6,11.75);
+				\draw [short] (6,11.75) -- (6,11.25);
+				\draw  (1.75,10.75) circle (0.5cm);
+				\draw  (5.5,10.75) circle (0.5cm);
+				\draw [short] (6,11.25) -- (6,11);
+				\draw [short] (3.75,10.75) -- (5,10.75);
+				\draw [short] (5.25,11) -- (5.25,10.5);
+				\draw [short] (5.25,10.5) -- (5.5,10.5);
+				\draw [short] (5.5,10.5) -- (5.5,11);
+				\draw [short] (5.25,11) -- (5.5,11);
+				\draw [short] (2,11) -- (2,10.5);
+				\draw [short] (2,11) -- (1.75,11);
+				\draw [short] (1.75,11) -- (1.75,10.5);
+				\draw [short] (1.75,10.5) -- (2,10.5);
+				\draw [short] (5.5,10.75) -- (6,11);
+				\draw [short] (1.25,11) -- (1.75,10.75);
+				\draw [->, >=Stealth] (1.75,10.75) -- (1.25,10.5);
+				\draw [->, >=Stealth] (5.5,10.75) -- (6,10.5);
+				\node at (2.75,10.75) [circ] {};
+				\draw (6,10.5) to[R] (6,8.5);
+				\draw [short] (1.25,8.75) -- (1.25,8.5);
+				\draw [short] (1.25,8.5) -- (6,8.5);
+				\node at (3.75,8.5) [circ] {};
+				\draw (3.75,8.5) to[short, -o] (3.75,8) ;
+				\node [font=\normalsize] at (3.75,15.75) {12 V};
+				\node [font=\normalsize] at (6,13.5) {Differential};
+				\node [font=\normalsize] at (6,13) {Amplifier};
+				\node [font=\normalsize] at (0.5,11.5) {1 mA};
+				\node [font=\normalsize] at (6.75,11.75) {1 $\mu$ A};
+				\node [font=\normalsize] at (6.5,9.5) {R};
+				\node [font=\normalsize] at (4,7.5) {-12 V};
+			\end{circuitikz}
+			}%
+	\end{figure}
+\end{enumerate}
+\end{document}
