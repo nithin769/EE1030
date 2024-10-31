@@ -1,0 +1,413 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+
+\title{GateAssignment6}
+\author{EE24BTECH11048-NITHIN.K} 
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\begin{enumerate}
+\section{Q.26 to Q.55 carry two marks each}
+%1
+\item Consider two functions: $x = \psi\ln{\phi}$ and $y = \phi\ln{\psi}$. Which one of the following is the correct expression for $\frac{\partial \psi}{\partial x}$
+	\begin{enumerate}
+		\item $\frac{x\ln{\psi}}{\ln{\phi}\ln{\psi} - 1}$
+		\item $\frac{\ln{\phi}}{\ln{\phi}\ln{\psi} - 1}$
+		\item $\frac{\ln{\psi}}{\ln{\phi}\ln{\psi} - 1}$
+		\item $\frac{x\ln{\phi}}{\ln{\phi}\ln{\psi} - 1}$
+	\end{enumerate}
+%2
+\item The cross-section of a built-up wooden beam as shown in the figure $\brak{\text{not drawn to scale}}$ is subjected to a vertical shear force of 8 kN. The beam is symmetrical about the neutral axis $\brak{\text{N.A.}}$ shown, and the moment of inertia about N.A. is $1.5\times 10^9 {mm}^4$. Considering that the nails at the location P are spaced longitudinally $\brak{\text{alonf the length of the beam}}$ at 60 mm, each of the nails at P will be subjected to the shear force of
+	\begin{figure}[H]
+		\centering
+		\resizebox{1\textwidth}{!}{%
+			\begin{circuitikz}
+				\tikzstyle{every node}=[font=\LARGE]
+				\draw [ line width=1.3pt ] (2.25,14.25) rectangle (3.25,12.75);
+				\draw [ line width=1.3pt ] (3.25,14.25) rectangle (7.5,13.25);
+				\draw [ line width=1.3pt ] (5,13.25) rectangle (6,10);
+				\draw [ line width=1.3pt ] (7.5,14.25) rectangle (8.5,12.75);
+				\draw [ line width=1.3pt ] (3,10) rectangle (7.5,9);
+				\draw [ line width=1.3pt ] (2,10.5) rectangle (3,9);
+				\draw [ line width=1.3pt ] (7.5,10.5) rectangle (8.5,9);
+				\draw [line width=1.3pt, dashed] (3.75,11.5) -- (7.25,11.5);
+				\draw [line width=1.3pt, short] (2,14) -- (2,13.5);
+				\draw [line width=1.3pt, short] (2,14) -- (3.75,13.75);
+				\draw [line width=1.3pt, short] (2,13.5) -- (3.75,13.75);
+				\draw [line width=1.3pt, short] (5.25,14.5) -- (5.75,14.5);
+				\draw [line width=1.3pt, short] (5.25,14.5) -- (5.5,12.75);
+				\draw [line width=1.3pt, short] (5.75,14.5) -- (5.5,12.75);
+				\draw [line width=1.3pt, short] (8.75,14) -- (8.75,13.5);
+				\draw [line width=1.3pt, short] (8.75,14) -- (7,13.75);
+				\draw [line width=1.3pt, short] (8.75,13.5) -- (7,13.75);
+				\draw [line width=1.3pt, short] (1.75,9.75) -- (1.75,9.25);
+				\draw [line width=1.3pt, short] (1.75,9.25) -- (3.5,9.5);
+				\draw [line width=1.3pt, short] (1.75,9.75) -- (3.5,9.5);
+				\draw [line width=1.3pt, short] (8.75,9.75) -- (8.75,9.25);
+				\draw [line width=1.3pt, short] (8.75,9.75) -- (7,9.5);
+				\draw [line width=1.3pt, short] (7,9.5) -- (8.75,9.25);
+				\draw [line width=1.3pt, short] (5.25,8.75) -- (5.75,8.75);
+				\draw [line width=1.3pt, short] (5.25,8.75) -- (5.5,10.5);
+				\draw [line width=1.3pt, short] (5.5,10.5) -- (5.75,8.75);
+				\node [font=\normalsize] at (6.75,11.75) {N.A.};
+				\draw [line width=0.2pt, <->, >=Stealth] (1.75,14.25) -- (1.75,12.75);
+				\draw [line width=0.5pt, <->, >=Stealth] (9,14.25) -- (9,12.75);
+				\draw [line width=0.5pt, <->, >=Stealth] (9.75,14.25) -- (9.75,9);
+				\draw [line width=0.5pt, <->, >=Stealth] (2.25,15) -- (3.25,15);
+				\draw [line width=0.5pt, <->, >=Stealth] (3.25,15) -- (7.5,15);
+				\draw [line width=0.5pt, <->, >=Stealth] (7.5,15) -- (8.5,15);
+				\draw [line width=0.5pt, ->, >=Stealth] (4,12.75) -- (4,13.25);
+				\draw [line width=0.5pt, ->, >=Stealth] (4,14.75) -- (4,14.25);
+				\node [font=\small] at (4.25,12.75) {50};
+				\node [font=\small] at (1.25,13.5) {100};
+				\node [font=\small] at (9.25,13.5) {100};
+				\node [font=\small] at (10.25,11.5) {400};
+				\node [font=\small] at (8,15.25) {50};
+				\node [font=\small] at (5.5,15.25) {300};
+				\node [font=\small] at (2.75,15.25) {50};
+				\node [font=\normalsize] at (1.5,9.5) {P};
+				\draw [line width=0.5pt, short] (1.5,14.25) -- (2,14.25);
+				\draw [line width=0.5pt, short] (1.5,12.75) -- (2,12.75);
+				\draw [line width=0.5pt, short] (2.25,15.25) -- (2.25,14.75);
+				\draw [line width=0.5pt, short] (3.25,15.25) -- (3.25,14.75);
+				\draw [line width=0.5pt, short] (7.5,15.25) -- (7.5,14.75);
+				\draw [line width=0.5pt, short] (8.5,15.25) -- (8.5,14.75);
+				\draw [line width=0.5pt, short] (8.75,14.25) -- (9.25,14.25);
+				\draw [line width=0.5pt, short] (8.75,12.75) -- (9.25,12.75);
+				\draw [line width=0.5pt, short] (9.5,14.25) -- (10,14.25);
+				\draw [line width=0.5pt, short] (9.5,9) -- (10,9);
+			\end{circuitikz}
+			}%
+	\end{figure}
+	\begin{enumerate}
+		\item 60 N
+		\item 120 N
+		\item 240 N
+		\item 480 N
+	\end{enumerate}
+%3
+\item The rigid-jointed plane frame QRS shown in the figure is subjected to a load P at the joint R. Let the axial deformation in the frame be neglected. If the support S undergoes a settlement of $\Delta = \frac{PL^3}{\beta EI}$, the vertical reaction at the support S will become zero when $\beta$ is equal to
+	\begin{figure}[H]
+		\centering
+		\resizebox{1\textwidth}{!}{%
+			\begin{circuitikz}
+				\tikzstyle{every node}=[font=\normalsize]
+				\draw [line width=0.5pt, short] (3,14.25) -- (3,13);
+				\draw [line width=0.5pt, short] (3,14.25) -- (2.75,14);
+				\draw [line width=0.5pt, short] (3,14) -- (2.75,13.75);
+				\draw [line width=0.5pt, short] (3,13.75) -- (2.75,13.5);
+				\draw [line width=0.5pt, short] (3,13.5) -- (2.75,13.25);
+				\draw [line width=0.5pt, short] (3,13.25) -- (2.75,13);
+				\draw [line width=1.2pt, short] (3,13.75) -- (6,13.75);
+				\draw [line width=1pt, short] (6,13.75) -- (6,10.75);
+				\draw [line width=0.5pt, short] (5.25,10.75) -- (6.75,10.75);
+				\draw [line width=0.5pt, short] (5.75,10.75) -- (5.25,10.5);
+				\draw [line width=0.5pt, short] (6,10.75) -- (5.5,10.5);
+				\draw [line width=0.5pt, short] (6.25,10.75) -- (5.75,10.5);
+				\draw [line width=0.5pt, short] (6.5,10.75) -- (6,10.5);
+				\draw [line width=0.5pt, ->, >=Stealth] (6,14.75) -- (6,14);
+				\node [font=\normalsize] at (5.5,14.25) {R};
+				\node [font=\normalsize] at (6.25,14.75) {P};
+				\node [font=\normalsize] at (6.25,12.25) {EI};
+				\draw [line width=0.5pt, <->, >=Stealth] (7.5,13.75) -- (7.5,10.75);
+				\draw [line width=0.5pt, short] (7.25,10.75) -- (7.75,10.75);
+				\draw [line width=0.5pt, short] (7.25,13.75) -- (7.75,13.75);
+				\draw [line width=0.5pt, short] (3,10.25) -- (3,9.75);
+				\draw [line width=0.5pt, short] (6,10.25) -- (6,9.75);
+				\draw [line width=0.5pt, <->, >=Stealth] (3,10) -- (6,10);
+				\node [font=\normalsize] at (4.5,9.75) {L};
+				\node [font=\normalsize] at (5.75,11.25) {S};
+				\node [font=\normalsize] at (7.75,12.25) {L};
+				\node [font=\normalsize] at (3.5,14.25) {Q};
+				\node [font=\normalsize] at (4.5,13.5) {EI};
+			\end{circuitikz}
+			}%
+	\end{figure}
+	\begin{enumerate}
+                \item 0.1
+                \item 3.0
+                \item 7.5
+                \item 48.0
+        \end{enumerate}
+%4
+\item If the section shown in the figure turns from fully-elastic to fully-plastic, the depth of neutral axis $\brak{\text{N.A.}}$, $\overline{y}$, decreases by
+	\begin{figure}[H]
+		\centering
+		\resizebox{1\textwidth}{!}{%
+			\begin{circuitikz}
+				\tikzstyle{every node}=[font=\normalsize]
+				\draw [line width=1pt, short] (2.25,14.75) -- (2.25,13.5);
+				\draw [line width=0.9pt, short] (2.25,14.75) -- (8.75,14.75);
+				\draw [line width=1pt, short] (8.75,14.75) -- (8.75,13.5);
+				\draw [line width=1pt, short] (2.25,13.5) .. controls (3.75,13.5) and (3.75,13.5) .. (5,13.5);
+				\draw [line width=1pt, short] (5,13.5) -- (5,10);
+				\draw [line width=1.1pt, short] (5,10) -- (6,10);
+				\draw [line width=1.1pt, short] (6,10) -- (6,13.5);
+				\draw [line width=1pt, short] (6,13.5) -- (8.75,13.5);
+				\draw [line width=0.5pt, dashed] (4,11.75) -- (7,11.75);
+				\draw [line width=0.5pt, <->, >=Stealth] (5,9.5) -- (6,9.5);
+				\draw [line width=0.5pt, <->, >=Stealth] (9,14.75) -- (9,13.5);
+				\draw [line width=0.5pt, <->, >=Stealth] (9,13.5) -- (9,10);
+				\draw [line width=0.5pt, <->, >=Stealth] (1.5,14.75) -- (1.5,11.75);
+				\draw [line width=0.5pt, short] (1.25,11.75) -- (1.75,11.75);
+				\draw [line width=0.5pt, short] (1.25,14.75) -- (1.75,14.75);
+				\draw [line width=0.5pt, short] (8.75,14.75) -- (9.25,14.75);
+				\draw [line width=0.5pt, short] (8.75,13.5) -- (9.25,13.5);
+				\draw [line width=0.5pt, short] (8.75,10) -- (9.25,10);
+				\draw [line width=0.5pt, <->, >=Stealth] (2.25,15.5) -- (8.75,15.5);
+				\draw [line width=0.5pt, short] (2.25,15.75) -- (2.25,15.25);
+				\draw [line width=0.5pt, short] (8.75,15.75) -- (8.75,15.25);
+				\node [font=\normalsize] at (6.5,12.25) {N.A.};
+				\node [font=\large] at (1,13.25) {y};
+				\node [font=\normalsize] at (5.5,15.75) {60};
+				\node [font=\normalsize] at (9.25,14) {5};
+				\node [font=\normalsize] at (9.5,11.75) {60};
+				\node [font=\normalsize] at (5.5,8.75) {5};
+				\draw [line width=0.5pt, short] (5,9.75) -- (5,9.25);
+				\draw [line width=0.5pt, short] (6,9.75) -- (6,9.25);
+				\draw [line width=0.5pt, short] (1,13.5) -- (1,13.5);
+				\draw [line width=0.5pt, short] (0.75,13.5) -- (1.25,13.5);
+				\node [font=\normalsize] at (5.5,8.25) {Figure not drawn to scale };
+				\node [font=\normalsize] at (5.5,7.75) {All dimensions are in mm};
+			\end{circuitikz}
+			}%
+	\end{figure}
+	\begin{enumerate}
+                \item 10.75 mm
+                \item 12.25 mm
+                \item 13.75 mm
+                \item 15.25 mm
+        \end{enumerate}
+%5
+\item Sedimentation basin in a water treatment plant is designed for a flow rate of 0.2 $m^3$/s. The basin is rectangular with a length of 32 m, width of 8 m, and depth of 4 m. Assume that the settling velocity of these particles is governed by the stokes law. Given: density of the particles = 2.5 g/$cm^3$; density of water = 1 g/$cm^3$; dynamic viscosity of water = 0.01 g/$\brak{\text{cm.s}}$; gravitational acceleration = 980 cm/$s^2$. If the incoming water contains particles of diameter 25 $\mu m$ $\brak{\text{spherical and uniform}}$, the removal efficiency of these particles is
+	\begin{enumerate}
+                \item 51\%
+                \item 65\%
+                \item 78\%
+                \item 100\%
+        \end{enumerate}
+%6
+\item A survey line was measured to be 285.5 m with a tape having a nominal length of 30 m. On checking, the true length of the tape was found to be 0.05 m too short. If the line lay on a slope of 1 in 10. the reduced length $\brak{\text{horizontal length}}$ of the line for plotting of survey work would be
+	\begin{enumerate}
+                \item 283.6 m
+                \item 284.5 m
+                \item 285.0 m
+                \item 285.6 m
+        \end{enumerate}
+%7
+\item A 16 mm thick gusset plate is connected to the 12 mm thick flange plate of an I-section using fillet welds on both sides as shown in the figure $\brak{\text{not drwan to scale}}$. The gusset plate is subjected to a point load of 350 kN acting at a distance of 100 mm from the flange plate. Size of fillet weld is 10 mm.
+	\begin{figure}[H]
+		\centering
+		\resizebox{1\textwidth}{!}{%
+			\begin{circuitikz}
+				\tikzstyle{every node}=[font=\small]
+				\draw [line width=0.5pt, dashed] (1.25,13.75) -- (2.75,13.75);
+				\draw [line width=0.5pt, dashed] (2.75,13.75) -- (3,14.5);
+				\draw [line width=0.5pt, dashed] (3,14.25) -- (3.25,13.25);
+				\draw [line width=0.5pt, dashed] (3.25,13.25) -- (3.5,13.75);
+				\draw [line width=0.5pt, dashed] (3.5,13.75) -- (5,13.75);
+				\draw [line width=1.7pt, short] (1.5,13.75) -- (1.5,10);
+				\draw [line width=1.5pt, short] (2,13.75) -- (2,10);
+				\draw [line width=1.5pt, short] (4.25,13.75) -- (4.25,10);
+				\draw [line width=1.5pt, short] (4.75,13.75) -- (4.75,10);
+				\draw [line width=0.5pt, dashed] (1.25,10) -- (2.5,10);
+				\draw [line width=0.5pt, dashed] (2.5,10) -- (2.75,10.75);
+				\draw [line width=0.5pt, dashed] (2.75,10.5) -- (3,9.25);
+				\draw [line width=0.5pt, dashed] (3,9.25) -- (3.25,10);
+				\draw [line width=0.5pt, dashed] (3.25,10) -- (5,10);
+				\draw [ fill={rgb,255:red,0; green,0; blue,0} , line width=0.5pt ] (4.75,12.75) rectangle (5,11.25);
+				\draw [line width=0.9pt, short] (4.75,12.75) -- (6.75,12.75);
+				\draw [line width=0.9pt, short] (6.75,12.75) -- (6.75,12);
+				\draw [line width=0.9pt, short] (6.75,12) -- (6.25,11.25);
+				\draw [line width=0.9pt, short] (4.75,11.25) -- (6.25,11.25);
+				\draw [line width=0.5pt, <->, >=Stealth] (3.75,12.75) -- (3.75,11.25);
+				\draw [line width=0.5pt, short] (3.5,12.75) -- (4,12.75);
+				\draw [line width=0.5pt, short] (3.5,11.25) -- (4,11.25);
+				\draw [line width=1.1pt, ->, >=Stealth] (6.25,13.75) -- (6.25,12.75);
+				\draw [line width=0.5pt, <->, >=Stealth] (4.75,13.25) -- (6.25,13.25);
+				\draw [line width=0.5pt, ->, >=Stealth] (6,10) -- (4.75,10.25);
+				\draw [line width=0.5pt, ->, >=Stealth] (6,11) -- (5,11.75);
+				\draw [line width=0.5pt, ->, >=Stealth] (8,13) -- (7,12);
+				\node [font=\small] at (5.5,13.5) {100 mm};
+				\node [font=\small] at (6.25,14) {\textbf{350 kN}};
+				\node [font=\normalsize] at (3,8.75) {\textbf{(Front view)}};
+				\node [font=\small] at (7.5,10) {Flange(12 mm thick)};
+				\node [font=\small] at (6.75,10.75) {Fillet weld};
+				\node [font=\small] at (9,13.25) {16 mm thick};
+				\node [font=\small] at (3,12) {\textbf{500 mm}};
+				\node [font=\small] at (9,13) {gusset plate};
+				\node [font=\small] at (3,10.75) {I-section};
+				\draw [line width=1.5pt, short] (11.5,14.25) -- (11.5,10.25);
+				\draw [line width=1.4pt, short] (13.75,14.25) -- (13.75,10.25);
+				\draw [line width=0.5pt, dashed] (11,14.25) -- (12,14.25);
+				\draw [line width=0.5pt, dashed] (12,14.25) -- (12.5,15);
+				\draw [line width=0.5pt, dashed] (12.5,15) -- (12.75,13.25);
+				\draw [line width=0.5pt, dashed] (12.75,13.25) -- (13.25,14.25);
+				\draw [line width=0.5pt, dashed] (13.25,14.25) -- (14.25,14.25);
+				\draw [line width=0.5pt, dashed] (10.75,10.25) -- (11.75,10.25);
+				\draw [line width=0.5pt, dashed] (11.75,10.25) -- (12.25,11.25);
+				\draw [line width=0.5pt, dashed] (12.25,11.25) -- (12.5,9.5);
+				\draw [line width=0.5pt, dashed] (12.5,9.5) -- (13,10.25);
+				\draw [line width=0.5pt, dashed] (13,10.25) -- (14.25,10.25);
+				\node [font=\normalsize] at (12.5,8.75) {\textbf{(Side view)}};
+				\draw [ line width=1.6pt ] (12.5,13) rectangle (13,11.5);
+				\draw [line width=0.5pt, short] (13,12.5) -- (13.25,12.75);
+				\draw [line width=0.5pt, short] (13,12.75) -- (13.25,13);
+				\draw [line width=0.5pt, short] (13,12.25) -- (13.25,12.5);
+				\draw [line width=0.5pt, short] (13,11.75) -- (13.25,12);
+				\draw [line width=0.5pt, short] (13,12) -- (13.25,12.25);
+				\draw [line width=0.5pt, short] (13,11.5) -- (13.25,11.75);
+				\draw [line width=0.5pt, short] (12.25,12.75) -- (12.5,13);
+				\draw [line width=0.5pt, short] (12.25,12.5) -- (12.5,12.75);
+				\draw [line width=0.5pt, short] (12.25,12.25) -- (12.5,12.5);
+				\draw [line width=0.5pt, short] (12.25,12) -- (12.5,12.25);
+				\draw [line width=0.5pt, short] (12.25,11.75) -- (12.5,12);
+				\draw [line width=0.5pt, short] (12.5,11.75) -- (12.25,11.5);
+				\draw [line width=0.5pt, <->, >=Stealth] (12,13) -- (12,11.5);
+				\draw [line width=0.5pt, short] (11.75,13) -- (12.25,13);
+				\draw [line width=0.5pt, short] (11.75,11.5) -- (12.25,11.5);
+				\draw [line width=0.5pt, ->, >=Stealth] (14.75,11) -- (13.25,11.5);
+				\draw [line width=0.5pt, ->, >=Stealth] (14.75,11) -- (12.5,11.25);
+				\draw [line width=0.5pt, ->, >=Stealth] (11.25,12.25) -- (12,12.25);
+				\draw [line width=0.5pt, short] (11.25,12.25) -- (11.25,11.75);
+				\draw [line width=0.5pt, short] (11.25,11.75) -- (10.75,11.75);
+				\node [font=\small] at (10,11.75) {\textbf{500 mm}};
+				\node [font=\small] at (15,10.75) {Fillet weld};
+			\end{circuitikz}
+			}%
+		\end{figure}
+The maximum resultant stress $\brak{\text{in MPa, round off to 1 decimal place}}$ on the fillet weld along the vertical plane would be \underline{\hspace{1cm}}
+%8
+\item The network of a small construction project awarded to a contractor is shown in the following figure. The normal duration, crash duration, normal cost, and crash cost of all the activities are shown in the table. The indirect cost incurred by the contractor is INR 5000 per day.
+	\begin{figure}[H]
+		\centering
+		\resizebox{1\textwidth}{!}{%
+			\begin{circuitikz}
+				\tikzstyle{every node}=[font=\large]
+				\draw [ line width=0.5pt ] (2.75,15.25) circle (1cm);
+				\draw [ line width=0.5pt ] (8.5,15.25) circle (1cm);
+				\draw [ line width=0.5pt ] (14.25,19.25) circle (1cm);
+				\draw [ line width=0.5pt ] (14.25,11.25) circle (1cm);
+				\draw [ line width=0.5pt ] (20.25,15.5) circle (1cm);
+				\draw [ line width=0.5pt ] (25.25,15.5) circle (1cm);
+				\draw [line width=2pt, ->, >=Stealth] (3.75,15.25) -- (7.25,15.25);
+				\draw [line width=1.1pt, ->, >=Stealth] (9.5,15.75) -- (13.25,18.75);
+				\draw [line width=1.1pt, ->, >=Stealth] (9.5,15.25) -- (19.25,15.25);
+				\draw [line width=1.1pt, ->, >=Stealth] (9.5,14.75) -- (13.25,11.75);
+				\draw [line width=1.1pt, ->, >=Stealth] (15.5,19) -- (19.25,16.25);
+				\draw [line width=1.1pt, ->, >=Stealth] (15.25,11.5) -- (19.5,14.5);
+				\draw [line width=1.1pt, ->, >=Stealth] (21.25,15.5) -- (24.25,15.5);
+				\node [font=\large] at (5.5,15.75) {P};
+				\node [font=\large] at (11,17.75) {Q};
+				\node [font=\large] at (18.25,17.75) {U};
+				\node [font=\large] at (16.5,13.25) {T};
+				\node [font=\large] at (12,13.75) {R};
+				\node [font=\large] at (14.5,15.75) {S};
+				\node [font=\large] at (22.75,16) {V};
+			\end{circuitikz}
+			}%
+	\end{figure}
+	\begin{table}[H]
+		\centering
+		\input{tables/table.tex}
+	\end{table}
+If the project is targeted for completion in 16 days, the total cost $\brak{\text{in INR}}$ to be incurred by the contractor would be \underline{\hspace{1cm}}
+%9
+\item A box measuring $50 cm \times 50 cm \times 50 cm$ is filled to the top with dry carse aggregate of mass 187.5 kg. The water absorption and specifiv gravity of the aggregate are 0.5\% and 2.5, respectively. The maximum quantity of water $\brak{\text{in kg, round off to 2 decimal places}}$ required to fill the box completely is \underline{\hspace{1cm}}
+%10
+\item A portal frame shown in figure $\brak{\text{not drawn to scale}}$ has a hinge support at joint P and a roller support at joint R. A point load of 50 kN is acting at joint R in the horizontal direction. The flexural rigidity, EI, of each member is $10^6$ kN$m^2$. Under the applied load, the horizontal dispalcement $\brak{\text{in mm, round off to 1 decimal place}}$ of joint R would be \underline{\hspace{1cm}}
+	\begin{figure}[H]
+		\centering
+		\resizebox{1\textwidth}{!}{%
+			\begin{circuitikz}
+				\tikzstyle{every node}=[font=\large]
+				\draw [line width=2pt, short] (4.75,21) -- (6,23.25);
+				\draw [line width=2pt, short] (6,23.25) -- (7.5,21);
+				\draw [line width=2pt, short] (4.75,21) -- (7.5,21);
+				\draw [line width=1.1pt, short] (5.25,21) -- (4.75,20.5);
+				\draw [line width=1.1pt, short] (5.75,21) -- (5.25,20.5);
+				\draw [line width=1.1pt, short] (6.25,21) -- (5.75,20.5);
+				\draw [line width=1.1pt, short] (6.75,21) -- (6.25,20.5);
+				\draw [line width=1.1pt, short] (7.25,21) -- (6.75,20.5);
+				\draw [line width=2pt, short] (6,23.25) -- (14.25,23.25);
+				\draw [line width=2pt, short] (14.25,23.25) -- (14.25,10);
+				\draw [line width=1.1pt, short] (14.25,10) -- (13,9);
+				\draw [line width=1.1pt, short] (14.25,10) -- (15.5,9);
+				\draw [line width=1.1pt, short] (13,9) -- (15.5,9);
+				\draw [ line width=1.1pt ] (14,8.75) circle (0.25cm);
+				\draw [ line width=1.1pt ] (14.5,8.75) circle (0.25cm);
+				\draw [line width=2pt, short] (13.25,8.5) -- (15.5,8.5);
+				\draw [line width=1.1pt, short] (13.5,8.5) -- (13,7.75);
+				\draw [line width=1.1pt, short] (14,8.5) -- (13.5,7.75);
+				\draw [line width=1.1pt, short] (14.5,8.5) -- (14,7.75);
+				\draw [line width=1.1pt, short] (15,8.5) -- (14.5,7.75);
+				\draw [line width=2pt, ->, >=Stealth] (15,10.25) -- (17.5,10.25);
+				\node [font=\large] at (13.75,15.75) {EI};
+				\node [font=\large] at (15.25,15.75) {10 m};
+				\node [font=\large] at (13.5,10.25) {R};
+				\node [font=\large] at (18.5,10.25) {50 kN};
+				\node [font=\large] at (14.75,23.75) {Q};
+				\node [font=\large] at (10,23.75) {5 m};
+				\node [font=\large] at (10,22.75) {EI};
+				\node [font=\large] at (6,23.75) {P};
+			\end{circuitikz}
+			}%
+	\end{figure}
+%11
+\item A sample of air analysed at $0\degree C$ and 1 atm pressure is reported to contain 0.02 ppm $\brak{\text{parts per million}}$ of N$O_2$. Assume the gram molecular mass of N$O_2$ as 46 and its volume at $0\degree C$ and 1 atm pressure as 22.4 litres per mole. The equivalent N$O_2$ concentration $\brak{\text{in microgram per cubic meter, round off to 2 decimal places}}$ would be \underline{\hspace{1cm}}
+%12
+\item A 0.80 m deep bed of sand filter $\brak{\text{length 4 m and width 3 m}}$ is made of uniform particles $\brak{\text{diameter = 0.40 mm, specific gravity = 2.65, shape factor = 0.85}}$ with bed porosity of 0.4. The bed has to be backwashed at a flow rate of 3.60 $m^3$/min. During backwashing, if the terminal settling velocity of sand particles is 0.05 m/s, the expanded bed depth $\brak{\text{in m, round off to 2 decimal places}}$ is \underline{\hspace{1cm}}
+%13
+\item A wasteland is to be disinfected with 35 mg/L of chlorine to obtain 99\% kill of micro-organisms. The number of micro-organisms remaining alive $\brak{N_t}$ at time t, is modelled by $N_t = N_0e^{-kt}$, where $N_0$ is number of micro-organisms at $t = 0$, and k is the rate of kill. The wastewater flow rate is 36 $m^3$/h, and $k = 0.23 min^{-1}$. If the depth and width of the chlorination tank are 1.5 m and 1.0 m, respectively, the length of the tank $\brak{\text{in m, round off to 2 decimal places}}$ is \underline{\hspace{1cm}}
+\end{enumerate}
+\end{document}
+
