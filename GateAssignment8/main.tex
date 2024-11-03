@@ -1,0 +1,308 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}
+\usepackage{pgf-pie}
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+
+\title{GateAssignment8}
+\author{EE24BTECH11048-NITHIN.K} 
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\begin{enumerate}
+%1
+\item Air $\brak{\text{of density 0.5} kg/m^3}$ enters horizontally into a jet engine at a steady speed of 200 m/s through an inlet area of 1.0 $m^2$. Upon entering the engine, the air passes through the combustion chamber and the exhaust gas exits the jet engine horizontally at a constant speed of 700 m/s. The fuel mass flow rate added in the combustion chamber is negligible compared to the air mass flow rate. Also neglect the pressure difference between the inlet air and the exhaust gas. The absolute value of the horizontal force $\brak{\text{in kN, up to one decimal place}}$ on the jet engine is \rule{1cm}{0.4pt}.
+%2
+\item Water discharges from a cylindrical tank through an orifice, as shown in the figure. The flow is considered frictionless. Initially, the water level in the tank was $h_1 = 2 m$. The diameter of the tank is $D = 1 m$, while the diameter of the jet is $d = 10 cm$, and the acceleration due to gravity is $g = 10m/s^2$. The time taken $\brak{\text{in seconds, up to one decimal place}}$ for the water level in the tank to come down to $h_2 = 1m$ is \rule{1cm}{0.4pt}.
+	\begin{figure}[H]
+		\centering
+		\resizebox{0.5\textwidth}{!}{%
+			\begin{circuitikz}
+				\tikzstyle{every node}=[font=\small]
+				\draw [short] (2.5,14.5) -- (2.5,11.75);
+				\draw [short] (2.5,11.75) -- (4.5,11.75);
+				\draw [short] (4.25,14.5) -- (4.25,12.25);
+				\draw [short] (4.25,12.25) -- (4.5,12.25);
+				\draw [dashed] (2,14) -- (3.5,14);
+				\draw [dashed] (3.25,13) -- (4.25,13);
+				\draw [dashed] (1.75,12) -- (4.75,12);
+				\draw [->, >=Stealth] (5.25,12) -- (6,12);
+				\draw [<->, >=Stealth] (2.5,13.5) -- (4.25,13.5);
+				\draw [<->, >=Stealth] (2,14) -- (2,12);
+				\draw [->, >=Stealth] (5.25,14.5) -- (5.25,13);
+				\draw [->, >=Stealth] (4.5,12.75) -- (4.5,12.25);
+				\draw [->, >=Stealth] (4.5,11.25) -- (4.5,11.75);
+				\node [font=\small] at (4.5,11) {d};
+				\node [font=\small] at (1.75,13) {$h_1$};
+				\node [font=\small] at (3.5,13.75) {D};
+				\node [font=\small] at (3.5,12.5) {$h_2$};
+				\node [font=\small] at (5.5,13.75) {g};
+				\draw [<->, >=Stealth] (3.75,13) -- (3.75,12);
+				\node [font=\small] at (6.75,12) {water exit};
+			\end{circuitikz}
+			}%
+	\end{figure}
+%3
+\item Water discharges steadily from a large reservoir through a long pipeline, as shown in the figure. The Darcy friction factor in the pipe is 0.02. The pipe diameter is 20 cm and the discharge of water is 360 $m^3$/h. Water level in the reservoir is 10 m and acceleration due to gravity $g = 10 m/s^2$. If minor losses are negligible, the length L $\brak{\text{in meters, up to one decimal place}}$ of the pipeline is \rule{1cm}{0.4pt}.
+	\begin{figure}[H]
+		\centering
+		\resizebox{0.5\textwidth}{!}{%
+			\begin{circuitikz}
+				\tikzstyle{every node}=[font=\small]
+				\draw [short] (1,14.75) -- (3,12);
+				\draw [short] (3,12) -- (7.5,12);
+				\draw [short] (4.5,15.25) -- (4.5,13);
+				\draw [short] (4.5,13) -- (7.5,13);
+				\draw [dashed] (1.25,14.5) -- (4.25,14.5);
+				\draw [short] (3.75,14.5) -- (3.5,15);
+				\draw [short] (3.5,15) -- (4,15);
+				\draw [short] (4,15) -- (3.75,14.5);
+				\draw [dashed] (2.75,12.5) -- (5.5,12.5);
+				\draw [dashed] (4.75,12) -- (4.75,11);
+				\draw [dashed] (7.5,12) -- (7.5,11);
+				\draw [<->, >=Stealth] (4.75,11.25) -- (7.5,11.25);
+				\draw [->, >=Stealth] (7,11.5) -- (7,12);
+				\draw [->, >=Stealth] (7,13.5) -- (7,13);
+				\draw [->, >=Stealth] (7.75,12.5) -- (8.5,12.5);
+				\draw [->, >=Stealth] (5.25,14.75) -- (5.25,13.75);
+				\draw [<->, >=Stealth] (3.25,14.5) -- (3.25,12.5);
+				\draw [short] (3.75,14.5) -- (4,14.25);
+				\draw [short] (4,14.25) -- (3.75,14);
+				\node [font=\small] at (2.5,13.75) {h = 10 m};
+				\node [font=\small] at (5.5,14.5) {g};
+				\node [font=\small] at (6,11.5) {L};
+				\node [font=\small] at (7.5,13.5) {20 cm};
+				\node [font=\small] at (9.25,12.5) {water exit};
+			\end{circuitikz}
+			}%
+	\end{figure}
+%4
+\item Water is flowing with a flow rate Q in a horizontal circular pipe. Due to the low pressure created at the venturi section $\brak{\text{Section-1 in the figure}}$, water from a reservoir is drawn upward using a connecting pipe as shown in the figure. Take acceleration due to gravity $g = 10 m/s^2$. The flow rate $Q = 0.1 m^3/s$, $D_1 = 8 cm$, and $D_2 = 20 cm$. The maximum height $\brak{\text{h, in meters, up to one decimal place}}$ of the venturi from the reservoir just sufficient to raise the liquid up to Section-1 is \rule{1cm}{0.4pt}.
+	\begin{figure}[H]
+		\centering
+		\resizebox{0.5\textwidth}{!}{%
+			\begin{circuitikz}
+				\tikzstyle{every node}=[font=\normalsize]
+				\draw [dashed] (1.5,11.75) -- (10,11.75);
+				\draw [short] (1.5,12.75) -- (4.25,12.75);
+				\draw [short] (1.5,10.75) -- (4.25,10.75);
+				\draw [short] (8,12.75) -- (10.25,12.75);
+				\draw [short] (8,10.75) -- (10.25,10.75);
+				\draw [->, >=Stealth] (1.5,11.5) -- (2.5,11.5);
+				\draw [->, >=Stealth] (4,10) -- (4,9);
+				\draw [short] (6,11.5) -- (6,7.5);
+				\draw [short] (6.25,11.5) -- (6.25,7.5);
+				\draw [short] (1.5,8) -- (6,8);
+				\draw [short] (6.25,8) -- (10.5,8);
+				\draw [short] (1.5,7.25) -- (2.25,7.25);
+				\draw [short] (2.75,7.25) -- (3.75,7.25);
+				\draw [short] (4.5,7.25) -- (5.25,7.25);
+				\draw [short] (6,7.25) -- (6.75,7.25);
+				\draw [short] (7.75,7.25) -- (9,7.25);
+				\draw [short] (9.75,7.25) -- (10.25,7.25);
+				\draw [short] (2,6.5) -- (3,6.5);
+				\draw [short] (3.5,6.5) -- (4.5,6.5);
+				\draw [short] (5.5,6.5) -- (6.5,6.5);
+				\draw [short] (7.25,6.5) -- (8,6.5);
+				\draw [short] (9,6.5) -- (9.5,6.5);
+				\draw [short] (1.75,5.75) -- (3,5.75);
+				\draw [short] (4.25,5.75) -- (5.25,5.75);
+				\draw [short] (7,5.75) -- (8.25,5.75);
+				\draw [short] (9.5,5.75) -- (10.5,5.75);
+				\node [font=\small] at (8,7.5) {Reservoir};
+				\draw [->, >=Stealth] (9.5,12) -- (9.5,12.75);
+				\draw [->, >=Stealth] (9.5,11.5) -- (9.5,10.75);
+				\node [font=\normalsize] at (9.5,11.75) {$D_2$};
+				\draw [dashed] (10.25,12.75) -- (10.25,11);
+				\draw [->, >=Stealth] (11,11.75) -- (10.25,12.25);
+				\node [font=\normalsize] at (11.5,11.5) {Section-2,};
+				\node [font=\normalsize] at (11.25,11) {outlet};
+				\node [font=\normalsize] at (11.5,10.5) {$p = p_{atm}$};
+				\node [font=\normalsize] at (4.5,9.5) {$g$};
+				\draw [->, >=Stealth] (5.5,10) -- (5.5,11.75);
+				\draw [->, >=Stealth] (5.5,9.5) -- (5.5,8);
+				\node [font=\normalsize] at (5.5,9.75) {$h$};
+				\node [font=\normalsize] at (6.5,11.75) {$D_1$};
+				\node [font=\normalsize] at (9,8.5) {$p = p_{atm}$};
+				\draw [short] (10.25,8) -- (10,8.5);
+				\draw [short] (10,8.5) -- (10.75,8.5);
+				\draw [short] (10.75,8.5) -- (10.25,8);
+				\draw [short] (10.25,8) -- (10.5,7.75);
+				\draw [short] (10.5,7.75) -- (10,7.5);
+				\node [font=\normalsize] at (2,12) {$Q$};
+				\draw [short] (1.75,12.75) -- (1.5,13);
+				\draw [short] (2,12.75) -- (1.75,13);
+				\draw [short] (2.25,12.75) -- (2,13);
+				\draw [short] (2.5,12.75) -- (2.25,13);
+				\draw [short] (2.75,12.75) -- (2.5,13);
+				\draw [short] (3.25,12.75) -- (3,13);
+				\draw [short] (3,12.75) -- (2.75,13);
+				\draw [short] (3.5,12.75) -- (3.25,13);
+				\draw [short] (3.75,12.75) -- (3.5,13);
+				\draw [short] (4,12.75) -- (3.75,13);
+				\draw [short] (1.75,10.75) -- (1.5,10.5);
+				\draw [short] (2.25,10.75) -- (2,10.5);
+				\draw [short] (2,10.75) -- (1.75,10.5);
+				\draw [short] (2.5,10.75) -- (2.25,10.5);
+				\draw [short] (2.75,10.75) -- (2.5,10.5);
+				\draw [short] (3,10.75) -- (2.75,10.5);
+				\draw [short] (3.25,10.75) -- (3,10.5);
+				\draw [short] (3.5,10.75) -- (3.25,10.5);
+				\draw [short] (4,10.75) -- (3.75,10.5);
+				\draw [short] (4.25,10.75) -- (4,10.5);
+				\draw [short] (3.75,10.75) -- (3.5,10.5);
+				\draw [short] (8,12.75) -- (7.75,13);
+				\draw [short] (8.25,13) -- (8.5,12.75);
+				\draw [short] (8.25,12.75) -- (8,13);
+				\draw [short] (8.75,12.75) -- (8.5,13);
+				\draw [short] (9,12.75) -- (8.75,13);
+				\draw [short] (9.25,12.75) -- (9,13);
+				\draw [short] (9.5,12.75) -- (9.25,13);
+				\draw [short] (9.75,12.75) -- (9.5,13);
+				\draw [short] (10,12.75) -- (9.75,13);
+				\draw [short] (10.25,12.75) -- (10,13);
+				\draw [short] (8,10.75) -- (7.75,10.5);
+				\draw [short] (8.25,10.75) -- (8,10.5);
+				\draw [short] (8.5,10.75) -- (8.25,10.5);
+				\draw [short] (9,10.75) -- (8.75,10.5);
+				\draw [short] (8.75,10.75) -- (8.5,10.5);
+				\draw [short] (9.25,10.75) -- (9,10.5);
+				\draw [short] (9.5,10.75) -- (9.25,10.5);
+				\draw [short] (9.75,10.75) -- (9.5,10.5);
+				\draw [short] (10,10.75) -- (9.75,10.5);
+				\draw [short] (10.25,10.75) -- (10,10.5);
+				\draw [short] (4.25,12.75) .. controls (5.25,11.75) and (7.25,11.75) .. (8,12.75);
+				\draw [short] (4.25,10.75) .. controls (4.5,11.5) and (5,11.5) .. (6,11.5);
+				\draw [short] (6.25,11.5) .. controls (7.5,11.5) and (7.75,11.5) .. (8,10.75);
+				\draw [short] (4.25,12.75) -- (4,13);
+				\draw [->, >=Stealth] (6.5,10.5) -- (6.5,11.5);
+				\draw [->, >=Stealth] (6.5,13.25) -- (6.5,12);
+				\node [font=\normalsize] at (6.5,13.5) {Section-1};
+			\end{circuitikz}
+			}%
+		\end{figure}
+%5
+	\item Condition to be satisfied for $\alpha$ and $\beta$ phases to be in equilibrium in a two-component $\brak{\text{A and B}}$ system at constant temperature and pressure is \\
+		$\brak{\text{Given : } \mu \text{ is the chemical potential}}$
+		\begin{enumerate}
+			\item entropy of the system should be maximum
+			\item Gibbs energy of the system should be minimum and $\mu_A^{\alpha} = \mu_B^{\alpha}$, $\mu_A^{\beta} = \mu_B^{\beta}$
+			\item Helmholtz energy should be minimum
+			\item Gibbs energy of the system should be minimum and $\mu_A^{\alpha} = \mu_B^{\beta}$, $\mu_A^{\beta} = \mu_B^{\alpha}$
+		\end{enumerate}
+%6
+	\item Amino acids react to form peptides and proteins. This process is known as
+		\begin{enumerate}
+			\item addition polymerisation
+			\item nucleophilic substitution
+			\item condensation polymerisation
+			\item hydration
+		\end{enumerate}
+%7
+	\item The most favoured slip system in face centred cubic metal is
+		\begin{enumerate}                                                                   
+			\item (111)[110]                                               
+			\item (110)[1$\overline{1}$1]
+			\item (11$\overline{1}$)[112]
+			\item (111)[1$\overline{1}$0]
+                \end{enumerate}
+%8
+	\item The dielectric constant of a material at ultraviolet frequency is mainly due to
+		\begin{enumerate}                                                                   
+                        \item dipolar polarizability                                         
+                        \item ionic polarizability
+                        \item electronic polarizability
+                        \item interfacial polarizability
+                \end{enumerate}
+%9
+	\item Match the different transformations/reactions in \textbf{Column I} with the most suitable information in \textbf{Column II}.
+		\begin{multicols}{2}
+			\textbf{Column I} \\
+			(P) Eutectoid reaction \\
+			(Q) Martensitic transformation \\
+			(R) Precipitation reaction
+			\columnbreak \\
+			\textbf{Column II} \\
+			(1) involves no diffusion \\
+			(2) one solid phase tranforms into two solid phases \\
+			(3) occurs in supersaturated solutions
+		\end{multicols}
+		\begin{enumerate}                                                            
+                        \item P - 2; Q - 3; R - 1
+                        \item P - 1; Q - 2; R - 3                        
+                        \item P - 2; Q - 1; R - 3
+                        \item P - 3; Q - 2; R - 1
+                \end{enumerate}
+%10
+	\item In scanning electron microscopy, the resolution of backscattered electron $\brak{\text{BSE}}$ image is poorer compared to that of secondary electron $\brak{\text{SE}}$ image, because
+		\begin{enumerate}                                                            
+                        \item energy of BSE is lower
+                        \item sampling volume of BSE is larger                     
+                        \item yield of BSE is lower
+                        \item sampling voulme of SE is larger
+                \end{enumerate}
+%11
+	\item Which of the following deposition conditions favour the formation of larger grains in thin film?
+		\begin{enumerate}                                                               
+                        \item Low deposition rate and ligh substrate temperature
+                        \item Low deposition rate and high substrate temperature
+                        \item High deposition rate and low substrate temperature
+                        \item High deposition rate and high substrate temperature
+                \end{enumerate}
+%12
+	\item A metal has a melting point of $600\degree C$. By rapid cooling, liquid metal can be made to solidify either at $500\degree C$ or $400\degree C$ or $300\degree C$. Critical size of the solid nuclei is
+		\begin{enumerate}                                                               
+                        \item same for solidification at $400\degree C$ and $500\degree C$
+			\item smaller for solidification at $400\degree C$ as compared to solidification at $500\degree C$
+                        \item larger for solidification at $400\degree C$ as compared to solidification at $500\degree C$
+                        \item the smallest for solidification at $300\degree C$
+                \end{enumerate}
+%13
+	\item A magnet of mass 50 g has a magnetic moment of $4.2 \times 10^{-7} A m^2$. The density of the magnet is $7.2 g cm^{-3}$. The intensity of magnetisation in $A m^{-1}$ is \rule{1cm}{0.4pt} $\brak{\text{round off to 3 decimal places}}$
+\end{enumerate}
+\end{document}
