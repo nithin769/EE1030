@@ -1,0 +1,264 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+
+\title{GateAssignment9}
+\author{EE24BTECH11048-NITHIN.K} 
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\begin{enumerate}
+		\section{Q.36 to Q.65 carry TWO marks Each}
+		%1
+	\item The figure shows a thin-walled open-top cylindrical vessel of radius r and wall thickness t. The vessel is held along the brim and contains a constant-density liquid to height h from the base. Neglect atmospheric pressure, the weight of the vessel and bending stresses in the vessel walls. \\
+		Which one of the plots depicts qualitatively CORRECT dependence of the magnitudes of axial wall stress $\brak{\sigma_1}$ and circumferential wall stress $\brak{\sigma_2}$ on y?
+		\begin{figure}[H]
+			\centering
+			\resizebox{0.4\textwidth}{!}{%
+				\begin{circuitikz}
+					\tikzstyle{every node}=[font=\normalsize]
+					\draw [line width=2pt, short] (3.25,13.5) -- (4,13.5);
+					\draw [short] (4,13.5) -- (4,10.25);
+					\draw [short] (4,10.25) -- (6.75,10.25);
+					\draw [short] (6.75,10.25) -- (6.75,13.5);
+					\draw [line width=2pt, short] (6.75,13.5) -- (7.5,13.5);
+					\draw [short] (3.25,13.5) -- (3,13.25);
+					\draw [short] (3.5,13.5) -- (3.25,13.25);
+					\draw [short] (3.75,13.5) -- (3.5,13.25);
+					\draw [short] (4,13.5) -- (3.75,13.25);
+					\draw [short] (6.75,13.5) -- (7,13.25);
+					\draw [short] (7,13.5) -- (7.25,13.25);
+					\draw [short] (7.25,13.5) -- (7.5,13.25);
+					\draw [short] (4,13) -- (6.75,13);
+					\draw [short] (4.25,12.75) -- (5,12.75);
+					\draw [short] (5.5,12.75) -- (6.5,12.75);
+					\draw [short] (5,12.25) -- (5.75,12.25);
+					\draw [short] (4.5,12.5) -- (5.25,12.5);
+					\draw [short] (5.25,11.75) -- (5.5,11.75);
+					\draw [short] (6,12.25) -- (6.25,12.25);
+					\draw [short] (4.25,12) -- (4.5,12);
+					\draw [short] (4.5,11.5) -- (5.25,11.5);
+					\draw [short] (5.75,11.5) -- (6.25,11.5);
+					\draw [short] (4.25,11.25) -- (5,11.25);
+					\draw [short] (5.75,11.75) -- (6.5,11.75);
+					\draw [short] (4.75,12) -- (5.25,12);
+					\draw [short] (5.75,10.75) -- (6.5,10.75);
+					\draw [short] (4.25,10.75) -- (4.75,10.75);
+					\draw [short] (5.25,10.5) -- (5.75,10.5);
+					\draw [dashed] (5.25,14) -- (5.25,10.25);
+					\draw [<->, >=Stealth] (5.25,11) -- (6.75,11);
+					\node [font=\normalsize] at (6,11.25) {r};
+					\draw [short] (2.75,13) -- (3.75,13);
+					\draw [short] (7,13) -- (8,13);
+					\draw [short] (7,10.25) -- (8,10.25);
+					\draw [->, >=Stealth] (3.25,13) -- (3.25,11.75);
+					\node [font=\normalsize] at (3.25,11.5) {y};
+					\draw [<->, >=Stealth] (7.5,13) -- (7.5,10.25);
+					\node [font=\normalsize] at (7.75,11.5) {h};
+					\draw [->, >=Stealth] (3.5,10.5) -- (4,10.5);
+					\draw [->, >=Stealth] (4.5,10.5) -- (4,10.5);
+					\node [font=\normalsize] at (3.75,10.75) {t};
+				\end{circuitikz}
+				}%
+		\end{figure}
+		\begin{enumerate}
+			\item
+				\begin{figure}[H]
+					\resizebox{0.3\textwidth}{!}{%
+						\begin{circuitikz}
+							\tikzstyle{every node}=[font=\normalsize]
+							\draw [line width=0.2pt, ->, >=Stealth] (4,12.25) -- (4,15.25);
+							\draw [line width=0.2pt, ->, >=Stealth] (3.5,12.75) -- (6.5,12.75);
+							\node [font=\small, rotate around={90:(0,0)}] at (3.75,13.75) {stress};
+							\node [font=\normalsize] at (7,12.75) {y};
+							\node [font=\normalsize] at (3.5,12.5) {0};
+							\draw [short] (4,12.75) -- (6,15);
+							\draw [dashed] (6,15) -- (6,12.75);
+							\draw [dashed] (4,13.75) -- (6,13.75);
+							\draw [dashed] (5,13.75) -- (5,12.75);
+							\node [font=\small] at (5,12.5) {h/2};
+							\node [font=\small] at (6,12.5) {h};
+							\node [font=\normalsize] at (4.5,14) {$\sigma_1$};
+							\node [font=\normalsize] at (5.25,14.75) {$\sigma_2$};
+						\end{circuitikz}
+						}%
+				\end{figure}
+			\item
+				\begin{figure}[H]
+					\resizebox{0.3\textwidth}{!}{%
+						\begin{circuitikz}    
+							\tikzstyle{every node}=[font=\normalsize]
+							\draw [line width=0.2pt, ->, >=Stealth] (4,12.25) -- (4,15.25);
+							\draw [line width=0.2pt, ->, >=Stealth] (3.5,12.75) -- (6.5,12.75);
+							\node [font=\small, rotate around={90:(0,0)}] at (3.75,13.75) {stress};
+							\node [font=\normalsize] at (7,12.75) {y};
+							\node [font=\normalsize] at (3.5,12.5) {0};
+							\draw [short] (4,12.75) -- (6,15);
+							\draw [dashed] (6,15) -- (6,12.75);
+							\draw [dashed] (4,13.75) -- (6,13.75);
+							\draw [dashed] (5,13.75) -- (5,12.75);
+							\node [font=\small] at (5,12.5) {h/2};
+							\node [font=\small] at (6,12.5) {h};  
+							\node [font=\normalsize] at (4.5,14) {$\sigma_2$};
+							\node [font=\normalsize] at (5.25,14.75) {$\sigma_1$};
+						\end{circuitikz}
+						}%
+				\end{figure}
+			\item
+				\begin{figure}[H]
+					\resizebox{0.3\textwidth}{!}{%
+						\begin{circuitikz}
+							\tikzstyle{every node}=[font=\normalsize]
+							\draw [line width=0.2pt, ->, >=Stealth] (4,12.25) -- (4,15.25);
+							\draw [line width=0.2pt, ->, >=Stealth] (3.5,12.75) -- (6.5,12.75);
+							\node [font=\small, rotate around={90:(0,0)}] at (3.75,13.75) {stress};
+							\node [font=\normalsize] at (7,12.75) {y};
+							\node [font=\normalsize] at (3.75,12.5) {0};
+							\draw [dashed] (6,15) -- (6,12.75);
+							\draw [dashed] (5,13.75) -- (5,12.75);
+							\node [font=\small] at (5,12.5) {h/2};
+							\node [font=\small] at (6,12.5) {h};
+							\node [font=\normalsize] at (5.25,14.75) {$\sigma_1$};
+							\node [font=\normalsize] at (5.75,13.25) {$\sigma_2$};
+							\draw [dashed] (4,12.75) -- (6,15);
+							\draw [short] (4,12.75) -- (6,13.5);
+						\end{circuitikz}
+						}%
+				\end{figure}
+			\item
+				\begin{figure}[H]
+					\resizebox{0.3\textwidth}{!}{%
+						\begin{circuitikz}
+							\tikzstyle{every node}=[font=\normalsize]
+							\draw [line width=0.2pt, ->, >=Stealth] (4,12.25) -- (4,15.25);
+							\draw [line width=0.2pt, ->, >=Stealth] (3.5,12.75) -- (6.5,12.75);
+							\node [font=\small, rotate around={90:(0,0)}] at (3.75,13.75) {stress};
+							\node [font=\normalsize] at (7,12.75) {y};
+							\node [font=\normalsize] at (3.75,12.5) {0};
+							\draw [dashed] (6,15) -- (6,12.75);
+							\draw [dashed] (5,13.75) -- (5,12.75);                                                  
+							\node [font=\small] at (5,12.5) {h/2};
+							\node [font=\small] at (6,12.5) {h};
+							\node [font=\normalsize] at (5.25,14.75) {$\sigma_2$};
+							\node [font=\normalsize] at (5.75,13.25) {$\sigma_1$};
+							\draw [dashed] (4,12.75) -- (6,15);
+							\draw [short] (4,12.75) -- (6,13.5);
+						\end{circuitikz}  
+						}%
+				\end{figure}
+		\end{enumerate}
+		%2
+	\item Which one of the following statements is FALSE?
+		\begin{enumerate}
+			\item For an ideal gas, the enthalpy is independent of pressure.
+			\item For a real gas going through an adiabatic reversible process, the process equation is given by $PV^{\gamma}$ = constant, where P is the pressure, V is the volume and $\gamma$ is the ratio o
+				f the specific heats of the gas at constant pressure and constant volume.
+			\item For an ideal gas undergoing a reversible polytropic process $PV^{1.5}$ = constant, the equation connecting the pressure, volume and temperature of the gas at any point along the process is
+				$\frac{P}{R} = \frac{mT}{V}$, where R is the gas constant and m is the mass of the gas.
+			\item Any real gas behaves as an ideal gas at sufficiently low pressure or sufficiently high temperature.
+		\end{enumerate}
+		%3
+	\item Consider a fully adiabatic piston-cylinder arrangement as shown in the figure. The piston is massless and cross-sectional area of the cylinder is A. The fluid inside the cylinder is air $\brak{\text{consid
+		ered as a perfect gas}}$, with $\gamma$ being the ratio of the specific heat at constant pressure to the specific heat at constant volume for air. The piston is initially located at a position $L_1$. The
+		initial pressure of the air inside the cylinder is $P_1 >> P_0$, where $P_0$ is the atmospheric pressure. The stop $S_1$ is instantaneously removed and the piston moves to the position $L_2$, where the 
+		equilibrium pressure of air inside the cylinder is $P_2 >> P_0$. \\
+		What is the work done by the piston on the atmosphere during this process?
+		\begin{figure}[!ht]
+			\centering
+			\resizebox{0.5\textwidth}{!}{%
+				\begin{circuitikz}
+					\tikzstyle{every node}=[font=\normalsize]
+					\draw [ line width=1.1pt ] (2.25,12.75) rectangle (6,11.5);
+					\draw [ fill={rgb,255:red,0; green,0; blue,0} , line width=1.1pt ] (6,12.75) rectangle (6.25,11.5);
+					\draw [ line width=1.1pt ] (6.25,12.75) rectangle (8,11.5);
+					\draw [ fill={rgb,255:red,0; green,0; blue,0} , line width=1.1pt ] (8,12.75) rectangle (8.25,11.5);
+					\node [font=\normalsize] at (4.25,12) {$Air, pressure P_1$};
+					\draw [short] (2.25,13.5) -- (2.25,12.75);
+					\draw [short] (6,13.5) -- (6,12.75);
+					\draw [short] (2.25,11.5) -- (2.25,10.75);
+					\draw [short] (8.25,11.5) -- (8.25,10.75);
+					\draw [<->, >=Stealth] (2.25,11) -- (8.25,11);
+					\draw [<->, >=Stealth] (2.25,13.25) -- (6,13.25);
+					\node [font=\normalsize] at (4,13.5) {$L_1$};
+					\node [font=\normalsize] at (4.75,10.75) {$L_2$};
+					\draw [short] (6.25,12.75) .. controls (6.25,13.5) and (6,13.75) .. (6.5,13.75);
+					\draw [short] (6.5,13.75) .. controls (7,14) and (7,14.25) .. (6.75,14.5);
+					\draw [short] (6.25,12.75) -- (6.5,13);
+					\draw [short] (6.25,12.75) -- (6,13);
+					\draw [short] (8.25,12.75) -- (8.5,13);
+					\draw [line width=1.1pt, short] (8.25,12.75) -- (9.25,12.75);
+					\draw [line width=1.1pt, short] (8.25,11.5) -- (9.25,11.5);
+					\draw [short] (8.25,13.5) .. controls (9,13.75) and (9,14) .. (8.75,14.25);
+					\draw [short] (8.25,12.75) .. controls (8,13.25) and (7.75,13.5) .. (8.25,13.5);
+					\draw [short] (8.25,12.75) -- (7.75,13);
+					\node [font=\normalsize] at (6.25,15.25) {Initial position};
+					\node [font=\normalsize] at (9.5,15) {Final position of};
+					\node [font=\normalsize] at (6.25,14.75) {of the piston};
+					\node [font=\normalsize] at (9.25,14.5) {the piston};
+					\node [font=\normalsize] at (10.5,12.25) {Atmosphere};
+					\node [font=\normalsize] at (10.5,11.75) {$pressure P_0$};
+					\draw [ fill={rgb,255:red,255; green,190; blue,111} , line width=0.8pt ] (6.25,12) rectangle (7,11.5);
+					\draw [ fill={rgb,255:red,255; green,190; blue,111} , line width=0.8pt ] (8.25,12) rectangle (9,11.5);
+					\node [font=\normalsize] at (6.5,11.75) {$S_1$};
+					\node [font=\normalsize] at (8.5,11.75) {$S_2$};
+				\end{circuitikz}
+				}%
+		\end{figure}
+		\begin{enumerate}
+			\item 
+		\end{enumerate}
+
+
+
+
+
+\end{enumerate}
+\end{document}
