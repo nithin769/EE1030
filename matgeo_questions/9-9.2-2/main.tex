@@ -36,7 +36,6 @@
 \usepackage{hhline}
 \usepackage{ifthen}
 \usepackage{lscape}
-\renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
 \setlength{\intextsep}{10pt} % Space between text and floats
 
@@ -59,11 +58,13 @@ Area lying in the first quadrant and bounded by the circle $x^2 + y^2 = 4$ and t
 x = 0 and x = 2 is \\
 \textbf{Solution:} \\
 \begin{table}[h!]
-      \centering
-      \input{tables/table1.tex}
-      \caption{Variables Used}
+	\centering
+	\resizebox{\textwidth}{!}{
+		\input{tables/table1.tex}
+	}
+	\caption{Variables Used}
 \end{table}\\
-\text{On comparing g\brak{x} and $x^2 + y^2 - 4 = 0$ the parameters of the circle are} \\
+On comparing $g\brak{x}$ and $x^2 + y^2 - 4 = 0$ the parameters of the circle are \\
 \begin{align}
 	\vec{V} = \myvec{ 1 & 0 \\
 	0 & 1 } \\
@@ -78,10 +79,10 @@ x = 0 and x = 2 is \\
 \text{for indefinite integration of above form we get} \\
 \begin{align}
 	\int\sqrt{4 - x^2} dx = 2\sin^{-1}\frac{x}{2} + x\sqrt{4 - x^2} + c \\
-	2\sin^{-1}\frac{2}{2} + 2\sqrt{4 - 2^2} - 2\sin^{-1}\frac{0}{2} - 0\sqrt{4 - 0^2}
+	\int_{0}^{2}\sqrt{4 - x^2} dx = 2\sin^{-1}\frac{2}{2} + 2\sqrt{4 - 2^2} - 2\sin^{-1}\frac{0}{2} - 0\sqrt{4 - 0^2}
 \end{align}
 \begin{align}
-	\pi
+	\int_{0}^{2}\sqrt{4 - x^2} dx = \pi
 \end{align}
 \text{Hence the enclosed area is $\pi$ square units.}
 \begin{figure}[h]
