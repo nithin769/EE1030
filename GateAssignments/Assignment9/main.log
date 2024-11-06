@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.5)  5 NOV 2024 18:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.5)  6 NOV 2024 23:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1898,27 +1898,56 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 File: ts1txr.fd 2000/12/15 v3.1
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] [2] (./main.aux)
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Underfull \hbox (badness 4832) in paragraph at lines 270--351
+\OT1/txr/m/n/10 Applying the ideal or-thog-o-nal cut-ting model, con-sider two 
+shear planes
+ []
+
+
+Underfull \hbox (badness 2564) in paragraph at lines 270--351
+\OT1/txr/m/n/10 PQ and RS close to each other. As they ap-proach the thin shear
+ zone
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 472.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+[6] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 4926D94FF53037FB09C9BF5AE52BAD71;226.
  ) 
 Here is how much of TeX's memory you used:
- 49772 strings out of 478287
- 1164312 string characters out of 5849290
- 1636413 words of memory out of 5000000
- 67143 multiletter control sequences out of 15000+600000
- 535493 words of font info for 163 fonts, out of 8000000 for 9000
+ 49999 strings out of 478287
+ 1168190 string characters out of 5849290
+ 1642413 words of memory out of 5000000
+ 67309 multiletter control sequences out of 15000+600000
+ 569726 words of font info for 253 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 106i,11n,107p,425b,1026s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,12n,107p,496b,1026s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
-/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 38988 bytes).
+1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tx
+fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (6 pages, 71333 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
+ 171 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
+ 64 named destinations out of 1000 (max. 500000)
  117 words of extra memory for PDF output out of 10000 (max. 10000000)
 

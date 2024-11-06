@@ -56,10 +56,10 @@
 % \bigskip
 {\let\newpage\relax\maketitle}
 \begin{enumerate}
-		\section{Q.36 to Q.65 carry TWO marks Each}
-		%1
-	\item The figure shows a thin-walled open-top cylindrical vessel of radius r and wall thickness t. The vessel is held along the brim and contains a constant-density liquid to height h from the base. Neglect atmospheric pressure, the weight of the vessel and bending stresses in the vessel walls. \\
-		Which one of the plots depicts qualitatively CORRECT dependence of the magnitudes of axial wall stress $\brak{\sigma_1}$ and circumferential wall stress $\brak{\sigma_2}$ on y?
+\section{Q.36 to Q.65 carry TWO marks Each}
+%1
+\item The figure shows a thin-walled open-top cylindrical vessel of radius r and wall thickness t. The vessel is held along the brim and contains a constant-density liquid to height h from the base. Neglect atmospheric pressure, the weight of the vessel and bending stresses in the vessel walls. \\
+	Which one of the plots depicts qualitatively CORRECT dependence of the magnitudes of axial wall stress $\brak{\sigma_1}$ and circumferential wall stress $\brak{\sigma_2}$ on y?
 		\begin{figure}[H]
 			\centering
 			\resizebox{0.4\textwidth}{!}{%
@@ -195,23 +195,23 @@
 						}%
 				\end{figure}
 		\end{enumerate}
-		%2
-	\item Which one of the following statements is FALSE?
+%2
+\item Which one of the following statements is FALSE?
 		\begin{enumerate}
 			\item For an ideal gas, the enthalpy is independent of pressure.
-			\item For a real gas going through an adiabatic reversible process, the process equation is given by $PV^{\gamma}$ = constant, where P is the pressure, V is the volume and $\gamma$ is the ratio o
-				f the specific heats of the gas at constant pressure and constant volume.
-			\item For an ideal gas undergoing a reversible polytropic process $PV^{1.5}$ = constant, the equation connecting the pressure, volume and temperature of the gas at any point along the process is
-				$\frac{P}{R} = \frac{mT}{V}$, where R is the gas constant and m is the mass of the gas.
+			\item For a real gas going through an adiabatic reversible process, the process equation is given by $PV^{\gamma}$ = constant, where P is the pressure, V is the volume and $\gamma$ is the 
+				ratio of the specific heats of the gas at constant pressure and constant volume.
+			\item For an ideal gas undergoing a reversible polytropic process $PV^{1.5}$ = constant, the equation connecting the pressure, volume and temperature of the gas at any point along the pro
+				cess is $\frac{P}{R} = \frac{mT}{V}$, where R is the gas constant and m is the mass of the gas.
 			\item Any real gas behaves as an ideal gas at sufficiently low pressure or sufficiently high temperature.
 		\end{enumerate}
-		%3
-	\item Consider a fully adiabatic piston-cylinder arrangement as shown in the figure. The piston is massless and cross-sectional area of the cylinder is A. The fluid inside the cylinder is air $\brak{\text{consid
-		ered as a perfect gas}}$, with $\gamma$ being the ratio of the specific heat at constant pressure to the specific heat at constant volume for air. The piston is initially located at a position $L_1$. The
-		initial pressure of the air inside the cylinder is $P_1 >> P_0$, where $P_0$ is the atmospheric pressure. The stop $S_1$ is instantaneously removed and the piston moves to the position $L_2$, where the 
-		equilibrium pressure of air inside the cylinder is $P_2 >> P_0$. \\
-		What is the work done by the piston on the atmosphere during this process?
-		\begin{figure}[!ht]
+%3
+\item Consider a fully adiabatic piston-cylinder arrangement as shown in the figure. The piston is massless and cross-sectional area of the cylinder is A. The fluid inside the cylinder is air $\brak{\text{consid
+	ered as a perfect gas}}$, with $\gamma$ being the ratio of the specific heat at constant pressure to the specific heat at constant volume for air. The piston is initially located at a position $L_1$. The 
+	initial pressure of the air inside the cylinder is $P_1 >> P_0$, where $P_0$ is the atmospheric pressure. The stop $S_1$ is instantaneously removed and the piston moves to the position $L_2$, where the e
+	quilibrium pressure of air inside the cylinder is $P_2 >> P_0$. \\
+	What is the work done by the piston on the atmosphere during this process?
+		\begin{figure}[H]
 			\centering
 			\resizebox{0.5\textwidth}{!}{%
 				\begin{circuitikz}
@@ -253,12 +253,330 @@
 				}%
 		\end{figure}
 		\begin{enumerate}
-			\item 
+			\item 0
+			\item $P_0A\brak{L_2 - L_1}$
+			\item $P_1AL_1\ln\frac{L_1}{L_2}$
+			\item $\frac{\brak{P_2L_2 - P_1L_1}}{\brak{1 - \gamma}}$
 		\end{enumerate}
-
-
-
-
-
+%4
+\item A cylindrical rod of length h and diameter d is placed inside a cubic enclosure of side length L. S denotes the inner surface of the cube. The view-factor $F_{S-S}$ is
+	\begin{enumerate}
+                \item 0
+                \item 1
+		\item $\frac{\brak{\pi dh + \pi d^2/2}}{6L^2}$
+                \item $1 - \frac{\brak{\pi dh + \pi d^2/2}}{6L^2}$
+	\end{enumerate}
+%5
+\item In an ideal orthogonal cutting experiment $\brak{\text{see figure}}$, the cutting speed V is 1 m/s, the rake angle of the tool $\alpha$ = 5$\degree$, and the shear angle, $\phi$, is known to be 45$\degree$
+	. \\
+	Applying the ideal orthogonal cutting model, consider two shear planes PQ and RS close to each other. As they approach the thin shear zone $\brak{\text{shown as a thick line in the figure}}$, plane RS ge
+	ts sheared with respect to PQ $\brak{\text{point R1 shears to R2, and S1 shears to S2}}$. \\
+	Assuming that the perpendicular distance between PQ and RS is $\delta = 25 \mu m$, what is the value of shear strain rate $\brak{\text{in } s^{-1}}$ that the material undergoes at the shear zone?
+	\begin{figure}[H]
+		\centering
+		\resizebox{0.6\textwidth}{!}{%
+			\begin{circuitikz}
+				\tikzstyle{every node}=[font=\normalsize]
+				\draw [dashed] (3.25,15.5) -- (3.25,12.25);
+				\node at (3.25,13.25) [circ] {};
+				\draw [short] (3.25,13.25) -- (5,13.25);
+				\draw [short] (3.25,13.25) -- (3.75,15);
+				\draw [short] (3.75,15) -- (5,13.25);
+				\draw [short] (3.25,14.5) .. controls (3.25,15) and (3.75,14.75) .. (3.5,14.25);
+				\draw [dashed] (3.25,13.25) -- (4.5,14.25);
+				\node at (5,13.25) [circ] {};
+				\node at (3.75,15) [circ] {};
+				\draw [<->, >=Stealth] (4,15.25) -- (5.25,13.5);
+				\node [font=\normalsize] at (4.5,13.5) {$\varphi$};
+				\node [font=\normalsize] at (4.25,13.75) {$\delta$};
+				\node [font=\normalsize] at (3.5,14.75) {$\alpha$};
+				\node [font=\normalsize] at (2.75,13.25) {P1};
+				\node [font=\normalsize] at (5.5,13) {S1};
+				\node [font=\normalsize] at (3.75,15.5) {S2};
+				\draw [ line width=0.5pt , rotate around={38:(4.125, 14.125)}] (4.25,14.25) rectangle (4,14);
+				\draw [ line width=0.8pt , dashed] (9.25,11.25) circle (1.75cm);
+				\draw [line width=0.7pt, short] (8.75,10.75) -- (10,15.25);
+				\draw [line width=0.7pt, dashed] (8.75,10.75) -- (10,10.75);
+				\draw [line width=0.7pt, dashed] (9,12) -- (12.25,8.25);
+				\node at (8.75,10.75) [circ] {};
+				\node at (9,12) [circ] {};
+				\node at (10,10.75) [circ] {};
+				\draw [line width=0.7pt, short] (8.75,10.75) -- (5.5,10.75);
+				\node at (7.25,10.75) [circ] {};
+				\draw [line width=0.9pt, short] (5.5,10.75) .. controls (6.5,8.5) and (4,9.5) .. (5.5,7.5);
+				\draw [line width=0.8pt, short] (5.5,7.5) -- (5.25,6);
+				\draw [line width=0.8pt, short] (5.25,6) -- (17.25,6);
+				\draw [line width=0.8pt, dashed] (5.25,8) -- (14,8.25);
+				\draw [line width=0.8pt, dashed] (7.25,10.75) -- (9.25,8.25);
+				\node at (9.25,8.25) [circ] {};
+				\node at (12.25,8.25) [circ] {};
+				\draw [line width=2pt, short] (8.75,10.75) -- (10.75,8.25);
+				\draw [line width=0.8pt, dashed] (10.75,8.25) -- (11.75,13.5);
+				\node at (10.75,8.25) [circ] {};
+				\draw [ fill={rgb,255:red,192; green,191; blue,188} , line width=0.2pt ] (7.25,10.75) -- (8.75,10.75) -- (10.75,8.25) -- (9.25,8.25) -- cycle;
+				\draw [line width=0.8pt, short] (8.25,8) .. controls (7.75,8.5) and (8.25,9) .. (8.75,9);
+				\draw [line width=0.8pt, short] (10.75,8.25) -- (13.75,15);
+				\draw [line width=0.8pt, short] (13.75,15) -- (16.5,15);
+				\draw [line width=0.8pt, short] (16.5,15) -- (16.5,10.25);
+				\draw [line width=0.8pt, short] (16.5,10.25) -- (10.75,8.25);
+				\draw [line width=0.8pt, short] (11.5,12.25) .. controls (12,12.75) and (12.5,12.5) .. (12.25,11.75);
+				\draw [line width=0.8pt, short] (10,15.25) .. controls (10.5,14.75) and (11,16.25) .. (11.25,15);
+				\draw [line width=0.8pt, short] (11.25,15) .. controls (12,14.25) and (12.25,15.5) .. (13.5,14.25);
+				\node [font=\large] at (7,11) {P};
+				\node [font=\large] at (12,12) {$\alpha$};
+				\node [font=\large] at (8.5,12) {S2};
+				\node [font=\large] at (8.25,11) {S};
+				\node [font=\large] at (10.5,11) {S1};
+				\node [font=\large] at (14.5,11.5) {stationary tool};
+				\node [font=\large] at (8.5,8.5) {$\varphi$};
+				\node [font=\large] at (9.25,7.75) {Q};
+				\node [font=\large] at (10.75,7.5) {R};
+				\node [font=\large] at (12.75,7.75) {R1};
+				\node at (11.25,9.25) [circ] {};
+				\draw [line width=0.7pt, ->, >=Stealth] (12.5,8.5) -- (11.75,9.25);
+				\node [font=\large] at (11.75,9.5) {R2};
+				\draw [line width=0.7pt, short] (13.75,8.25) -- (17,8.25);
+				\draw [line width=1.1pt, short] (17,8.25) .. controls (16,7.75) and (17.75,7.25) .. (17.25,6);
+				\draw [line width=0.7pt, ->, >=Stealth] (6.5,6.75) -- (8.5,6.75);
+				\node [font=\large] at (7.25,7.25) {V};
+				\node [font=\normalsize] at (9.75,6.5) {Work material is moving with a speed V};
+				\draw [line width=1.1pt, short] (8.25,12.5) -- (7.25,13);
+				\draw [line width=1.1pt, short] (8.25,12.5) -- (7.75,13.5);
+				\draw [line width=1.1pt, short] (6.75,12.5) -- (7.25,13);
+				\draw [line width=1.1pt, short] (7.75,13.5) -- (8.25,14);
+				\draw [line width=1.1pt, short] (6.75,12.5) -- (6.5,14);
+				\draw [line width=1.1pt, short] (6.5,14) -- (8.25,14);
+			\end{circuitikz}
+			}%
+		\end{figure}
+		\begin{enumerate}
+			\item $1.84 \times 10^4$
+			\item $5.20 \times 10^4$
+			\item $0.71 \times 10^4$
+			\item $1.30 \times 10^4$
+		\end{enumerate}
+%6
+\item A CNC machine has one of its linear positioning axes as shown in the figure, consisting of a motor rotating a lead screw, which in turn moves a nut horizontally on which a table is mounted. The motor moves in discrete rotational steps of 50 steps per revolution. The pitch of the screw is 5 mm and the total horizontal traverse length of the table is 100 mm. What is the total number of controllable locations at which the table can be positioned on this axis?
+	\begin{figure}[H]
+		\centering
+		\resizebox{0.5\textwidth}{!}{%
+			\begin{circuitikz}
+				\tikzstyle{every node}=[font=\large]
+				\draw [line width=2pt, short] (-2,10.75) -- (11.25,10.75);
+				\draw [ fill={rgb,255:red,192; green,191; blue,188} , line width=0.2pt ] (-2,10.75) rectangle (11,9.75);
+				\draw [ fill={rgb,255:red,0; green,0; blue,0} , line width=1.1pt ] (9.5,12.75) rectangle (10.5,10.75);
+				\draw [ line width=1.1pt ] (-1.5,12.75) rectangle (1.25,10.75);
+				\draw [ line width=1.1pt ] (1.25,12.25) rectangle (1.75,11.25);
+				\draw [ line width=1.1pt ] (1.75,12) rectangle (4.75,11.5);
+				\draw [ line width=1.1pt ] (4.75,12.5) rectangle (6.25,11.25);
+				\draw [ line width=1.1pt ] (6.25,12) rectangle (9.75,11.5);
+				\draw [ fill={rgb,255:red,192; green,191; blue,188} , line width=1.1pt ] (4,13) rectangle (7,12.5);
+				\node [font=\large] at (-0.25,11.75) {Motor};
+				\node [font=\normalsize] at (2.75,11.25) {screw};
+				\node [font=\large] at (5.5,11.75) {Nut};
+				\node [font=\large] at (6.5,13.5) {Table};
+				\draw [line width=0.7pt, <->, >=Stealth] (4.25,13.5) -- (5.75,13.5);
+				\draw [line width=0.8pt, ->, >=Stealth] (-2,14.5) -- (-1.5,13);
+				\node [font=\large] at (-2.25,15.75) {Motor that};
+				\node [font=\large] at (-2.25,15.25) {rotates in};
+				\node [font=\large] at (-1.75,14.75) {discrete steps};
+				\draw [line width=1.1pt, short] (2,12) -- (1.75,11.5);
+				\draw [line width=1.1pt, short] (2,11.5) -- (2.25,12);
+				\draw [line width=1.1pt, short] (2.25,11.5) -- (2.5,12);
+				\draw [line width=1.1pt, short] (2.75,11.5) -- (3,12);
+				\draw [line width=1.1pt, short] (2.5,11.5) -- (2.75,12);
+				\draw [line width=1.1pt, short] (3.25,11.5) -- (3.5,12);
+				\draw [line width=1.1pt, short] (3,11.5) -- (3.25,12);
+				\draw [line width=1.1pt, short] (3.75,11.5) -- (4,12);
+				\draw [line width=1.1pt, short] (4,11.5) -- (4.25,12);
+				\draw [line width=1.1pt, short] (4.25,11.5) -- (4.5,12);
+				\draw [line width=1.1pt, short] (3.5,11.5) -- (3.75,12);
+				\draw [line width=1.1pt, short] (6.25,11.75) -- (6.5,12);
+				\draw [line width=1.1pt, short] (6.5,11.5) -- (7,12);
+				\draw [line width=1.1pt, short] (6.75,11.5) -- (7.25,12);
+				\draw [line width=1.1pt, short] (7.25,11.5) -- (7.75,12);
+				\draw [line width=1.1pt, short] (7,11.5) -- (7.5,12);
+				\draw [line width=1.1pt, short] (7.5,11.5) -- (8,12);
+				\draw [line width=1.1pt, short] (8,11.5) -- (8.5,12);
+				\draw [line width=1.1pt, short] (7.75,11.5) -- (8.25,12);
+				\draw [line width=1.1pt, short] (8.5,11.5) -- (9,12);
+				\draw [line width=1.1pt, short] (8.25,11.5) -- (8.75,12);
+				\draw [line width=1.1pt, short] (8.75,11.5) -- (9.25,12);
+				\draw [line width=1.1pt, short] (4.5,11.5) -- (4.75,12);
+				\draw [line width=1.1pt, short] (6.25,11.5) -- (6.75,12);
+				\draw [line width=1.1pt, short] (9,11.5) -- (9.5,12);
+				\draw [line width=1.1pt, short] (9.25,11.5) -- (9.5,11.75);
+				\draw [line width=1.1pt, ->, >=Stealth] (8,11.25) .. controls (9,12) and (8.75,13.25) .. (8,12.25) ;
+			\end{circuitikz}
+			}%
+	\end{figure}
+	\begin{enumerate}
+		\item 5000
+		\item 2
+		\item 1000
+		\item 200
+	\end{enumerate}
+%7
+\item Cylindrical bars P and Q have identical lengths and radii, but are composed of different linear elastic materials. The Young\'s modulus and coefficient of thermal expansion of Q are twice the corresponding 
+	values of P. Assume the bars to be perfectly bonded at the interface, and their weights to be negligible. \\
+	The bars are held between rigid supports as shown in the figure and the temperature is raised by $\Delta T$. Assume that the stress in each bar is homogeneous and uniaxial. Denote the magnitudes of stres
+	s in P and Q by $\sigma_1$ and $\sigma_2$ , respectively. \\
+	Which of the statement(s) given is/are CORRECT?
+	\begin{figure}[H]
+		\centering
+		\resizebox{0.5\textwidth}{!}{%
+			\begin{circuitikz}
+				\tikzstyle{every node}=[font=\Large]
+				\draw [ line width=0.2pt ] (4.5,19.5) rectangle (5.25,15.75);
+				\draw [ line width=0.2pt ] (11.25,19.5) rectangle (12,15.75);
+				\draw [ fill={rgb,255:red,192; green,191; blue,188} , line width=1.1pt ] (5.25,18.25) rectangle (8.25,17);
+				\draw [ line width=1.1pt ] (8.25,18.25) rectangle (11.25,17);
+				\node [font=\Large] at (6.75,17.5) {$\sigma_1$};
+				\node [font=\Large] at (9.75,17.5) {$\sigma_2$};
+				\node [font=\large] at (9.75,18.75) {Q};
+				\node [font=\large] at (6.75,18.75) {P};
+				\draw [line width=0.8pt, short] (4.5,19.25) -- (4.75,19.5);
+				\draw [line width=0.8pt, short] (4.5,19) -- (5,19.5);
+				\draw [line width=0.8pt, short] (4.5,18.75) -- (5.25,19.5);
+				\draw [line width=0.8pt, short] (4.5,18.5) -- (5.25,19.25);
+				\draw [line width=0.8pt, short] (4.5,18.25) -- (5.25,19);
+				\draw [line width=0.8pt, short] (4.5,18) -- (5.25,18.75);
+				\draw [line width=0.8pt, short] (4.5,17.75) -- (5.25,18.5);
+				\draw [line width=0.8pt, short] (4.5,17.5) -- (5.25,18.25);
+				\draw [line width=0.8pt, short] (4.5,17.25) -- (5.25,18);
+				\draw [line width=0.8pt, short] (4.5,17) -- (5.25,17.75);
+				\draw [line width=0.8pt, short] (4.5,16.75) -- (5.25,17.5);
+				\draw [line width=0.8pt, short] (4.5,16.5) -- (5.25,17.25);
+				\draw [line width=0.8pt, short] (4.5,16.25) -- (5.25,17);
+				\draw [line width=0.8pt, short] (4.5,16) -- (5.25,16.75);
+				\draw [line width=0.8pt, short] (4.75,15.75) -- (5.25,16.25);
+				\draw [line width=0.8pt, short] (4.5,15.75) -- (5.25,16.5);
+				\draw [line width=0.8pt, short] (5,15.75) -- (5.25,16);
+				\draw [line width=0.8pt, short] (11.25,19.5) -- (12,19);
+				\draw [line width=0.8pt, short] (11.5,19.5) -- (12,19.25);
+				\draw [line width=0.8pt, short] (11.25,19.25) -- (12,18.75);
+				\draw [line width=0.8pt, short] (11.25,19) -- (12,18.5);
+				\draw [line width=0.8pt, short] (11.25,18.75) -- (12,18.25);
+				\draw [line width=0.8pt, short] (11.25,18.5) -- (12,18);
+				\draw [line width=0.8pt, short] (11.25,18.25) -- (12,17.75);
+				\draw [line width=0.8pt, short] (11.25,18) -- (12,17.5);
+				\draw [line width=0.8pt, short] (11.25,17.5) -- (12,17);
+				\draw [line width=0.8pt, short] (11.25,17.75) -- (12,17.25);
+				\draw [line width=0.8pt, short] (11.25,17.25) -- (12,16.75);
+				\draw [line width=0.8pt, short] (11.25,17) -- (12,16.5);
+				\draw [line width=0.8pt, short] (11.25,16.75) -- (12,16.25);
+				\draw [line width=0.8pt, short] (11.25,16.5) -- (12,16);
+				\draw [line width=0.8pt, short] (11.25,16.25) -- (12,15.75);
+				\draw [line width=0.8pt, short] (11.25,16) -- (11.75,15.75);
+			\end{circuitikz}
+			}%
+	\end{figure}
+	\begin{enumerate}
+		\item The interface between P and Q moves to the left after heating
+		\item The interface between P and Q moves to the right after heating
+		\item $\sigma_1 < \sigma_2$
+		\item $\sigma_1 = \sigma_2$
+	\end{enumerate}
+%8
+\item A very large metal plate of thickness d and thermal conductivity k is cooled by a stream of air at temperature $T_{\infty}$ = 300 K with a heat transfer coefficient h, as shown in the figure. The centerlin
+	e temperature of the plate is $T_P$. In which of the following case(s) can the lumped parameter model be used to study the heat transfer in the metal plate?
+	\begin{figure}[H]
+		\centering
+		\resizebox{0.5\textwidth}{!}{%
+			\begin{circuitikz}
+				\tikzstyle{every node}=[font=\Large]
+				\draw [line width=0.8pt, short] (9.5,18.75) -- (17.5,18.75);
+				\draw [line width=0.8pt, short] (9.5,17.25) -- (17.5,17.25);
+				\draw [line width=0.8pt, dashed] (8.5,18.75) -- (9.5,18.75);
+				\draw [line width=0.8pt, dashed] (8.5,17.25) -- (9.5,17.25);
+				\draw [line width=0.8pt, dashed] (17.5,18.75) -- (18.5,18.75);
+				\draw [line width=0.8pt, dashed] (17.5,17.25) -- (18.5,17.25);
+				\draw [line width=0.5pt, dashed] (9.25,18) .. controls (13.75,18) and (13.5,18) .. (17.75,18);
+				\draw [line width=0.6pt, <->, >=Stealth] (9.25,18.75) -- (9.25,17.25);
+				\draw [line width=0.6pt, <->, >=Stealth] (17.5,18) -- (17.5,17.25);
+				\draw [line width=0.8pt, ->, >=Stealth] (12,19.5) -- (14.75,19.5);
+				\draw [line width=0.8pt, ->, >=Stealth] (12.25,16.5) -- (15,16.5);
+				\node [font=\Large] at (13.5,17.75) {$T_P$};
+				\node [font=\Large] at (13,20) {$T_{\infty}$};
+				\node [font=\large] at (8.5,18) {d};
+				\node [font=\large] at (18,17.5) {d/2};
+				\node [font=\Large] at (13.5,16) {$T_{\infty}$};
+			\end{circuitikz}
+			}%
+	\end{figure}
+	\begin{enumerate}
+		\item $h = 10 Wm^{-2}K^{-1}, k = 100 Wm^{-1}K^{-1}, d = 1 mm, T_P = 350 K$
+                \item $h = 100 Wm^{-2}K^{-1}, k = 100 Wm^{-1}K^{-1}, d = 1 m, T_P = 325 K$
+                \item $h = 100 Wm^{-2}K^{-1}, k = 1000 Wm^{-1}K^{-1}, d = 1 mm, T_P = 325 K$
+                \item $h = 1000 Wm^{-2}K^{-1}, k = 1 Wm^{-1}K^{-1}, d = 1 m, T_P = 350 K$
+        \end{enumerate}
+%9
+\item The smallest perimeter that a rectangle with area of 4 square units can have is \rule{1cm}{0.4pt} units. \\
+	$\brak{\text{Answer in integer}}$
+%10
+\item Consider the second-order linear ordinary differential equation
+	\begin{align*}
+		x^2\frac{d^2y}{dx^2} + x\frac{dy}{dx} - y = 0, x \geq 1
+	\end{align*}
+	with the initial conditions
+	\begin{align*}
+		y\brak{x = 1} = 6, \frac{dy}{dx}\bigg|_{x=1} = 2.
+	\end{align*}
+	The value of y at x = 2 equals \rule{1cm}{0.4pt}. \\
+	$\brak{\text{Answer in integer}}$
+%11
+\item The initial value problem
+	\begin{align*}
+		\frac{dy}{dt} + 2y = 0, y\brak{0} = 1
+	\end{align*}
+	is solved numerically using the forward Euler\'s method with a constant and positive time step of $\Delta t$. \\
+	Let $y_n$ represent the numerical solution obtained after n steps. The condition $|y_{n+1} \leq |y_n|$ is satisfied if and only if $\Delta t$ does not exceed \rule{1cm}{0.4pt}. \\
+	$\brak{\text{Answer in integer}}$
+%12
+\item The atomic radius of a hypothetical face-centered cubic (FCC) metal is ($\sqrt{2}$/10) nm. The atomic weight of the metal is 24.092 g/mol. Taking Avogadro\'s number to be $6.023 \times 10^{23}$ atoms/mol, the density of the metal is \rule{1cm}{0.4pt} kg/$m^3$. \\
+	$\brak{\text{Answer in integer}}$
+%13
+\item A steel sample with 1.5 wt.\% carbon $\brak{\text{no other alloying elements present}}$ is slowly cooled from 1100 $\degree$C to just below the eutectoid temperature (723 $\degree$ C). A part of the iron-cementite phase diagram is shown in the figure. The ratio of the pro-eutectoid cementite content to the total cementite content in the microstructure that develops just below the eutectoid temperature is \rule{1cm}{0.4pt}. \\
+	$\brak{\text{Rounded off to two decimal places}}$
+	\begin{figure}[H]
+		\centering
+		\resizebox{0.5\textwidth}{!}{%
+			\begin{circuitikz}
+				\tikzstyle{every node}=[font=\Large]
+				\draw [line width=0.7pt, short] (7.25,21.25) -- (7.25,13);
+				\draw [line width=0.8pt, short] (7.25,13) -- (16,13);
+				\draw [line width=0.8pt, short] (7.5,13) -- (8.5,16.5);
+				\draw [line width=0.8pt, short] (8.5,16.5) -- (7.25,18.5);
+				\draw [line width=0.8pt, short] (7.25,18.5) -- (11.25,16.5);
+				\draw [line width=0.8pt, dashed] (7.25,16.5) -- (8.5,16.5);
+				\draw [line width=0.8pt, short] (8.5,16.5) -- (16,16.5);
+				\draw [line width=0.8pt, dashed] (8.5,16.25) -- (8.5,13);
+				\draw [line width=0.8pt, dashed] (11.25,16.5) -- (11.25,13);
+				\draw [line width=0.8pt, short] (11.25,16.5) -- (14,19.5);
+				\draw [line width=1.4pt, dashed] (13.25,19.25) -- (13.25,13);
+				\node at (13.25,19.25) [circ] {};
+				\draw [line width=0.8pt, short] (14,19.5) -- (16,19.5);
+				\draw [line width=0.8pt, dashed] (12.75,21) -- (14,19.5);
+				\draw [line width=0.8pt, dashed] (14,19.5) -- (14,13);
+				\draw [line width=0.8pt, dashed] (16.5,19.5) -- (17.75,19.5);
+				\draw [line width=0.8pt, dashed] (16.5,16.5) -- (17.75,16.5);
+				\draw [line width=0.8pt, dashed] (16.5,13) -- (17.75,13);
+				\draw [line width=0.8pt, short] (17.75,21.75) -- (17.75,13);
+				\draw [line width=0.8pt, ->, >=Stealth] (17,14) -- (17.75,13.25);
+				\node [font=\normalsize, rotate around={90:(0,0)}] at (6.75,18.75) {Temperature($\circ$ C)};
+				\node [font=\normalsize] at (6.25,16.5) {723$\circ$ C};
+				\node [font=\large] at (7.75,15.75) {$\alpha$};
+				\node [font=\large] at (8.75,12.5) {0.035};
+				\node [font=\large] at (11.25,12.5) {0.8};
+				\node [font=\large] at (10.75,18.25) {$\gamma$};
+				\node [font=\normalsize] at (12.5,19.5) {1100$\circ$ C};
+				\node [font=\large] at (16.5,14.5) {$Fe_3C$};
+				\node [font=\large] at (18,12.5) {6.7};
+				\node [font=\large] at (14,12.5) {1.7};
+				\node [font=\large] at (13,12.5) {1.5};
+				\node [font=\Large] at (13,11) {wt.\%C};
+			\end{circuitikz}
+			}%
+	\end{figure}
 \end{enumerate}
 \end{document}
