@@ -1,0 +1,16 @@
+\frametitle{Python Code for Plotting}
+        \begin{lstlisting}[language=Python]
+	# Fill the area between the lines and the circle
+	plt.fill_between(x,0, y_circle, color='red', alpha=0.5, label='Shaded Region')
+
+	# Labels and title
+	plt.xlabel('x')
+	plt.ylabel('y')
+	
+	# Final plot settings
+	plt.legend(loc='upper right')
+	plt.axis('equal')
+	
+	#Display the Plot
+	plt.show()
+	\end{lstlisting}
