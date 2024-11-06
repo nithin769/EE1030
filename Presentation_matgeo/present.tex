@@ -14,6 +14,7 @@
 \usepackage{url}
 \usepackage{lmodern}
 \usepackage[utf8]{inputenc}
+\usepackage{xcolor}
 \def\UrlBreaks{\do\/\do-}
 \usetheme{Boadilla}
 \usecolortheme{lily}
@@ -65,34 +66,33 @@ breaklines=true,
 keepspaces=true,
 columns=fullflexible
 }
-
 \numberwithin{equation}{section}
 
-\title{Area Under Graph}
-\author{EE24BTECH11048-Nithin.K}
+\title{\textcolor{red}{\underline{\textbf{Area Under Graph}}}}
+\author{\textcolor{red}{\textbf{EE24BTECH11048-NITHIN.K}}}
 
-\date{\today}
+\date{\textcolor{red}{\today}}
 \begin{document}
 
 \begin{frame}
-\titlepage
+	\titlepage
 \end{frame}
 
 \section*{Outline}
 \begin{frame}
-	\frametitle{Table of Contents}
+	\frametitle{\underline{\textbf{Table of Contents}}}
 	\tableofcontents
 \end{frame}
 
 \section{Problem}
 \begin{frame}
-	\frametitle{Problem Statement}
-	Area lying in the first quadrant and bounded by the circle $x^2 + y^2 = 4$ and the lines x = 0 and x = 2 is?
+	\frametitle{\underline{Problem Statement}}
+	\textbf{Area lying in the first quadrant and bounded by the circle $x^2 + y^2 = 4$ and the lines $x = 0$ and $x = 2$ is?}
 \end{frame}
 
 \section{Solution}
 \begin{frame}
-	\frametitle{Solution}
+	\frametitle{\underline{Solution}}
 		\begin{table}[H]
 			\centering
 			\resizebox{\textwidth}{!}{
@@ -127,14 +127,14 @@ columns=fullflexible
 
 \section{Codes}
 \begin{frame}[fragile]
-	\frametitle{C Code for Calculating Area}
+	\frametitle{\underline{C Code for Calculating Area}}
 	\begin{lstlisting}[language=C]
 	#include <stdio.h>
 	#include <math.h>
 	double area(double lower_limit, double upper_limit){
 		double sum=0 ;
 		for ( double i = lower_limit; i<=upper_limit; i+=1e-7 ){
-			sum += sqrt(4-i*i)*1e-7;
+			sum += sqrt(4-(i*i))*1e-7;
 		}
 		return sum ;
 	}
@@ -142,7 +142,7 @@ columns=fullflexible
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{Python Code using shared library}
+	\frametitle{\underline{Python Code using shared library}}
 	\begin{lstlisting}[language=Python]
 	import ctypes
 	lib = ctypes.CDLL('./integration.so')
@@ -153,7 +153,7 @@ columns=fullflexible
 \end{frame}
 
 \begin{frame}[fragile]
-	\frametitle{Python Code for Plotting}
+	\frametitle{\underline{Python Code for Plotting}}
 	\begin{lstlisting}[language=Python]
 	import sys
 	sys.path.insert(0, '/home/nithink/matgeo/codes/CoordGeo')
@@ -168,7 +168,7 @@ columns=fullflexible
 
 	r = 2
 	V = np.eye(2)
-	u = np.array(([0, 0])).reshape(-1, 1)  # Reshaping u as a column vector
+	u = np.array(([0, 0])).reshape(-1, 1)
 	f = -4
 	\end{lstlisting}
 \end{frame}
@@ -230,7 +230,7 @@ columns=fullflexible
 \end{frame}
 
 \begin{frame}
-	\frametitle{Diagram}
+	\frametitle{\underline{Diagram}}
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\linewidth]{figs/Figure_1.png}
