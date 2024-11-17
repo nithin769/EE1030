@@ -1,0 +1,149 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+
+\title{EigenValues of a Matrix}
+\author{EE24BTECH11048-NITHIN.K} 
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\section{\textbf{Introduction}}
+Eigenvalues are scalar values associated with a square matrix A that satisfy:
+\begin{align*}
+A\vec{v} = \lambda \vec{v},
+\end{align*}
+where $\vec{v}$ is a non-zero eigenvector. Eigenvalues are fundamental to many scientific and engineering applications, including vibration analysis, quantum mechanics, and dimensionality reduction techniques like Principal Component Analysis $\brak{PCA}$. \\
+The QR algorithm is a robust iterative method for eigenvalue computation. It iteratively transforms a matrix into an upper triangular form, from which the eigenvalues can be read directly from the diagonal. This report explores the QR algorithm's implementation.
+
+\section{\textbf{Brief Description about Algorithm}}
+The QR algorithm is an iterative method to compute the eigenvalues $\brak{\text{and sometimes eigenvectors}}$ of a square matrix. It relies on the QR decomposition, which represents a matrix as 
+a product of an orthogonal matrix $\brak{\text{Q}}$ and an upper triangular matrix $\brak{\text{R}}$. \\
+\textbf{Steps of the QR Algorithm:}
+\begin{enumerate}
+	\item Start with a Matrix A: Begin with the given matrix A for which eigenvalues are to be computed.
+	\item QR Decomposition: At each iteration, perform the QR decomposition of $A_k$, where $A_k = Q_kR_k$.
+	\item Recompose the Matrix: Form a new matrix $A_{k+1}$ by multiplying $R_kQ_k$:
+		\begin{align*}
+			A_{k+1} = R_kQ_k
+		\end{align*}
+	\item Convergence: Repeat steps 2 and 3 until $A_k$ converges to a triangular matrix $\brak{\text{or nearly triangular}}$. The eigenvalues of $A_k$ are then the diagonal elements of the resulting matrix.
+\end{enumerate}
+\section{\textbf{Key Insights}}
+\textbf{Memory Usage:} \\
+\textbf{Efficiency}: The QR algorithm requires storing the matrices $A_K, Q_k \text{ and } R_k$. For an nxn matrix Memory usage is approximately $O\brak{n^2}$, dominated by the storage of $A_k$. 
+\\
+\textbf{Convergence Rate:} \\
+\textbf{Standard QR Algorithm}: Converges linearly for general matrices. convergence is faster for matrices with well-separated eigenvalues $\brak{\text{large gaps between eigenvalues}}$. \\
+\textbf{Challenges}:Slow convergence for matrices with close eigenvalues or clusters of eigenvalues. \\
+\textbf{Suitability for different Type of Matrices:} \\
+\textbf{Dense Matrices}: The QR algorithm is well-suited for small-to-moderate-sized dense matrices. For large dense matrices, computational costs can become prohibitive. \\
+\textbf{Sparse Matrices}: Direct application is inefficient because the QR steps often destroy sparsity. \\
+\textbf{Symmetric Matrices}: For symmetric matrices, QR decomposition can converge faster because eigenvalues are guaranteed to be real, and the orthogonal structure simplifies computations. \\
+If a matrix has defective eigenvalues (eigenvalues without a complete set of eigenvectors), the QR algorithm may converge poorly or fail to compute the full eigenvalue spectrum. \\ \\ \\
+\textbf{Computational Cost:} \\
+Each QR iteration involves:Decomposition: $O\brak{n^3}$ operations, Matrix recomposition: $O\brak{n^3}$ operations. \\
+For k iterations, the total cost is approximately $O\brak{kn^3}$, where k depends on the matrix's eigenvalue distribution.\\
+\textbf{Stability:} \\
+Orthogonal transformations used in QR decomposition maintain numerical stability by avoiding large round-off errors. \\
+\section{\textbf{Time Complexity:}}
+For an nxn matrix, QR decomposition using methods like Gram-Schmidt, Householder reflections, or Givens rotations has a computational cost of: $O\brak{n^3}$. \\
+Multiplying the matrices $R_k$ and $Q_k$ requires another: $O\brak{n^3}$. \\
+Total per iteration cost: $O\brak{n^3} + O\brak{n^3} = O\brak{n^3}$. \\
+For most practical implementations: 
+$k \approx O\brak{n}$ for the standard QR algorithm and $k \approx O\brak{\log\brak{n}}$ for shifted QR and its variants.
+The total time complexity is the product of the cost per iteration and the number of iterations: $T\brak{n} = k \cdot O\brak{n^3}$ \\
+Standard QR Algorithm: $T\brak{n} = O\brak{n} \cdot O\brak{n^3} = O\brak{n^4}$ \\
+Shifted QR Algorithm: $T\brak{n} = O\brak{\log\brak{n}} \cdot O\brak{n^3} = O\brak{n^3\log\brak{n}}$ \\
+\section{\textbf{Comparison to other Methods:}}
+Power Iteration: $O\brak{kn^2}$, efficient for computing a single eigenvalue but slow for the full spectrum. \\
+Lanczos/Arnoldi: $O\brak{kn^2}$, suitable for large sparse matrices. \\
+Jacobi Algorithm: $O\brak{n^4}$ slower than QR for large dense matrices.
+\begin{table}[H]
+	\centering
+	\input{./table.tex}
+\end{table}
+I chose the Shifted QR Algorithm to solve the eigenvalue problem for a matrix due to the following key reasons: \\
+\textbf{Eigenvalue Decomposition}: The goal is to compute the eigenvalues of a matrix. While there are several methods $\brak{\text{like power iteration or direct methods}}$, the Shifted QR Algorithm is specifically designed for this purpose, efficiently finding eigenvalues of large, sparse, or dense matrices. \\
+\textbf{Numerical Stability}: The Shifted QR Algorithm is numerically stable and avoids the problems associated with other methods like direct computation methods or methods that rely on iteration without shifts, which can converge slowly. \\
+The Shifted QR Algorithm uses orthogonal transformations, which preserve the norm of the matrix and are computationally efficient. This makes the algorithm relatively memory-friendly compared to more memory-heavy alternatives like Jacobi's method for eigenvalue problems or methods that require storing all eigenvectors explicitly. \\
+The Shifted QR Algorithm is robust against issues like small numerical errors during the calculation of eigenvalues. The shifts act as a form of acceleration, improving the stability of the algorithm.
+\section{\textbf{Alternatives}}
+\begin{enumerate}
+	\item \textbf{Power Iteration}: is a simple algorithm used to find the dominant eigenvalue $\brak{\text{the largest in magnitude}}$ and its corresponding eigenvector of a matrix. The method works by repeatedly multiplying a random vector $v_0$ by the matrix A and normalizing the result after each multiplication. As the iterations progress, the vector converges to the eigenvector associated with the largest eigen value of A. The dominant eigenvalue can be estimated by taking the ratio of consecutive vector norms. Power iteration is efficient for sparse matrices, but it only finds the largest eigenvalue, requiring modifications $\brak{\text{e.g., deflation}}$ to find additional eigenvalues.
+	\item \textbf{Jacobi's Method}: is an iterative algorithm used to find the eigenvalues and eigenvectors of a matrix, particularly for symmetric matrices. It works by repeatedly applying a series of orthogonal transformations $\brak{\text{rotations}}$ to the matrix, aiming to diagonalize it. In each iteration, Jacobi's method selects the largest off-diagonal element, applies a rotation that zeroes it, and updates the matrix. The process continues until the matrix is sufficiently diagonal, with the diagonal elements representing the eigenvalues, and the transformation matrices providing the eigenvectors. While Jacobi's method is highly accurate, it is computationally expensive with an $O\brak{n^3}$ complexity, making it inefficient for large matrices.
+	\item \textbf{Divide-and-Conquer Methods}: for eigenvalue computation are designed to break down a large matrix into smaller, more manageable submatrices, which can be solved independently and then combined. These methods are particularly effective for symmetric matrices. The idea is to recursively divide the matrix into blocks or use matrix decompositions $\brak{\text{e.g., Schur decomposition}}$ to reduce the problem's complexity. Once the subproblems are solved, the results are merged to obtain the final eigenvalues and eigenvectors. These methods offer better performance than direct approaches like Jacobi's method, particularly for large matrices, with a computational complexity of $O\brak{n^3}$. However, they require more sophisticated algorithms and are typically used when high accuracy and speed are needed.
+	\item The QR decomposition can be further made robust by using householder transformations,converting the matrix to hessenberg form reduces QR iterations and use of rayleigh quotient shift. \\
+		Householder Transformation is a linear algebra technique used to reduce a matrix to a simpler form, often a triangular or Hessenberg matrix. It works by applying a sequence of orthogonal transformations to eliminate elements below the main diagonal of the matrix. The transformation is represented by a Householder matrix, which is symmetric and orthogonal, and is used to create zeroes in specific positions of the matrix while preserving its eigenvalues. \\
+		To improve convergence, the QR algorithm can be enhanced by applying the Rayleigh quotient shift. This technique selects a shift $\sigma$ close to an eigenvalue of $\vec{A}$, effectively speeding up convergence and reducing the number of iterations. \\
+		The Rayleigh quotient shift involves the following steps:
+		\begin{enumerate}
+			\item Compute the shift:
+				\begin{align*}
+				\sigma = A_{n,n},
+				\end{align*}
+				where $A_{n,n}$ is the bottom-right entry of the current matrix A, approximating an eigenvalue.
+			\item Update the matrix by subtracting the shift:
+				\begin{align*}
+				A - \sigma I,
+				\end{align*}
+				where I is the identity matrix.
+			\item Perform QR decomposition on the shifted matrix:
+				\begin{align*}
+				A - \sigma I = QR.
+				\end{align*}
+			\item Recalculate $\vec{A}$ by applying the inverse shift:
+				\begin{align*}
+				A_{\text{new}} = RQ + \sigma I.
+				\end{align*}
+				\end{enumerate}
+This shifting mechanism "pushes" the matrix closer to its triangular form, accelerating convergence.
+\end{enumerate}
+\end{document}
