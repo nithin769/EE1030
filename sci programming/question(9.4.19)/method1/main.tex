@@ -59,7 +59,7 @@
 %\newpage
 %\bigskip
 {\let\newpage\relax\maketitle}
-
+\section{Method-1}
 \textbf{Question:} \\
   The volume of spherical balloon being inflated changes at a constant rate. If initially its radius is 3 units and after 3 seconds it is 6 units. Find the radius of balloon after t seconds. \\ 
 
@@ -86,11 +86,11 @@ t: The time after which the radius $r_t$ is to be found.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{growing_sphere.png}
+    \includegraphics[width=0.7\textwidth]{figs/growing_sphere.png}
     \caption{Visualization of the sphere growing over time.}
 \end{figure}
 
-\textbf{Python Code:}
+\textbf{Python Code To Calculate Radius:}
 \begin{lstlisting}[language=Python]
 import numpy as np
 def calculate_radius(r_0, r_3, t):
