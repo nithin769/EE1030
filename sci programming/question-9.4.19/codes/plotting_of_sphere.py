@@ -22,7 +22,6 @@ ax.set_zlim([-6, 6])
 ax.set_xlabel("X-axis")
 ax.set_ylabel("Y-axis")
 ax.set_zlabel("Z-axis")
-ax.set_title("Sphere Growing Over Time")
 
 plt.savefig("growing_sphere.png")
 plt.show()

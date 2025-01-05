@@ -39,12 +39,6 @@
 \renewcommand{\thetable}{\theenumi}
 \setlength{\intextsep}{10pt} % Space between text and floats
 
-\lstset{
-  basicstyle=\ttfamily,       % Use monospace font
-  escapeinside={(*@}{@*)},    % Define escape characters if needed
-  showspaces=false,           % Prevent special characters for spaces
-  showstringspaces=false      % Avoid showing special characters in strings
-}
 \numberwithin{equation}{enumi}
 \numberwithin{figure}{enumi}
 \renewcommand{\thetable}{\theenumi}
@@ -66,58 +60,64 @@
 $r_0$: Initial radius of the sphere = 3 units. \\
 $r_3$: Radius of the sphere at 3 seconds = 6 units. \\
 t: The time after which the radius $r_t$ is to be found. \\
-K:rate of change in volume \\
+K: rate of change in volume \\
   It is given that the rate of change in volume is constant hence \\
-  \begin{align*}
+  \begin{align}
 	  \frac{dV}{dt} = K
-  \end{align*}
-  \begin{align*}
+  \end{align}
+  \begin{align}
 	  \frac{dV}{dt} = \frac{V_3 - V_0}{3-0}
-  \end{align*}
-  \begin{align*}
+  \end{align}
+  \begin{align}
 	  K = \frac{1}{3} \times \brak{\frac{4\pi {r_3}^3}{3} - \frac{4\pi {r_0}^3}{3}} = 84\pi
-  \end{align*}
-  \begin{align*}
-	  \frac{dV}{dt} = K(constant) = 84\pi
-  \end{align*}
-  \begin{align*}
+  \end{align}
+  \begin{align}
+	  \frac{dV}{dt} = K = 84\pi
+  \end{align}
+  \begin{align}
 	  \frac{V_t - V_0}{t-0} = 84\pi
-  \end{align*}
-  \begin{align*}
+  \end{align}
+  \begin{align}
 	  V_t = V_0 + 84\pi t
-  \end{align*}
-  \begin{align*}
+  \end{align}
+  \begin{align}
 	  \frac{4\pi {r_t}^3}{3} = \frac{4\pi {r_0}^3}{3} + 84\pi t
-  \end{align*}
-  \begin{align*}
+  \end{align}
+  \begin{align}
 	  r_t = \brak{{r_0}^3 + 63t}^{\frac{1}{3}}
-  \end{align*}
+  \end{align}
+Substituting equation 0.3 in 0.1
+  \begin{align}
+	  \frac{dV}{dt} = 84\pi
+  \end{align}
+  \begin{align}
+	  \frac{4\pi r^2dr}{dt} = 84\pi
+  \end{align}
+  \begin{align}
+	  \frac{dr}{dt} = \frac{21}{r^2}
+  \end{align}
+  \begin{align}
+	  \frac{dy}{dx} = \frac{21}{y^2}                      
+  \end{align}
+  \begin{align}
+          \frac{y_{n+1} - y_n}{dx} = \frac{21}{{y_n}^2}
+  \end{align}
+  \begin{align}
+          y_{n+1} = \frac{21dx}{{y_n}^2} + y_n
+  \end{align}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{figs/growing_sphere.png}
-    \caption{Visualization of the sphere growing over time.}
+    \includegraphics[width=\textwidth]{figs/growing_sphere.png}
+    \caption{Sphere growing over time.}
 \end{figure}
 
-\textbf{Python Code To Calculate Radius:}
-\begin{lstlisting}[language=Python]
-import numpy as np
-def calculate_radius(r_0, r_3, t):
-    t_0 = 3.0  #Time at which r_3 is given (in seconds) 
-    rate = 4*(np.pi)*(r_3**3 - r_0**3)/(3*t_0) #Calculate the rate of change of volume
-    r_t = ((r_0**3) + (3*rate*t)/(4*np.pi))**(1/3) #Calculate the radius at time t
-    return r_t
-try:
-    r_0 = float(input("Enter initial radius (r_0): "))
-    r_3 = float(input("Enter radius at 3 seconds (r_3): "))
-    t = float(input("Enter the time (t) after which the radius is to be found: "))
-    if r_0 <= 0 or r_3 <= 0 or t < 0:
-        print("All radii must be positive, and time must be non-negative.")
-    else:
-        r_t = calculate_radius(r_0, r_3, t)
-        print(f"The radius of the sphere after {t} seconds is {r_t:.3f} units.")
-except ValueError:
-    print("Invalid input. Please enter numeric values.")
-\end{lstlisting}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figs/fig.png}
+    \caption{Simulation VS Theoretical Plot.}
+\end{figure}
+
+
 
 \end{document}
