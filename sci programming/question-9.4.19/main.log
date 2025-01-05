@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.5)  3 JAN 2025 13:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.5)  5 JAN 2025 10:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1859,54 +1859,54 @@ LaTeX Info: Redefining \nameref on input line 53.
 
 \c@lstlisting=\count392
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--65
+Underfull \hbox (badness 10000) in paragraph at lines 62--64
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 67
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 66
 .
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 6
-7.
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 67.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 66.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 67.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 66.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 6
-7.
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
-7.
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 10000) in paragraph at lines 66--71
+Underfull \hbox (badness 10000) in paragraph at lines 65--71
 
  []
 
 <figs/growing_sphere.png, id=31, 722.7pt x 433.62pt>
 File: figs/growing_sphere.png Graphic file (type png)
 <use figs/growing_sphere.png>
-Package pdftex.def Info: figs/growing_sphere.png  used on input line 89.
-(pdftex.def)             Requested size: 254.9356pt x 152.96024pt.
+Package pdftex.def Info: figs/growing_sphere.png  used on input line 84.
+(pdftex.def)             Requested size: 291.35735pt x 174.81454pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1917,46 +1917,39 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
-94.
+89.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txtt/m/it' in size <10> not available
-(Font)              Font shape `OT1/txtt/m/sl' tried instead on input line 97.
+(Font)              Font shape `OT1/txtt/m/sl' tried instead on input line 92.
  [2 <./figs/growing_sphere.png>] (./main.aux)
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  68CABC066C9BC6A955329732F99B3ECB;83.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 50178 strings out of 478287
- 1167065 string characters out of 5849290
- 1992728 words of memory out of 5000000
- 67534 multiletter control sequences out of 15000+600000
- 537737 words of font info for 168 fonts, out of 8000000 for 9000
+ 50171 strings out of 478287
+ 1167010 string characters out of 5849290
+ 1992767 words of memory out of 5000000
+ 67530 multiletter control sequences out of 15000+600000
+ 536683 words of font info for 166 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 106i,10n,107p,425b,1321s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,10n,107p,425b,1319s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tx
-fonts/txbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
-times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
-fb>
-Output written on main.pdf (2 pages, 201773 bytes).
+1/public/txfonts/txbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tx
+fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
+s/utmri8a.pfb>
+Output written on main.pdf (2 pages, 198497 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
- 23 named destinations out of 1000 (max. 500000)
+ 121 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
+ 22 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
