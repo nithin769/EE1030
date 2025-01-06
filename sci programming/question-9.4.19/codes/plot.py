@@ -35,8 +35,8 @@ y_theory = theo_result(x_theory)
 
 
 # Plot the results
-plt.plot(x_itr, y_itr, label = "Simulation Solution" , color="red")
-plt.plot(x_theory, y_theory, label = "Theoretical Solution" , color="green")
+plt.plot(x_itr, y_itr, label = "Sim" , color="red")
+plt.plot(x_theory, y_theory, label = "Theory" , color="green")
 plt.xlabel("X-axis")
 plt.ylabel("Y-axis")
 plt.legend()
