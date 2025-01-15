@@ -97,18 +97,19 @@ The bilinear transform maps the s-domain to the z-domain as:
 \end{align}
 Substitute s in $\mathcal{L}\brak{y}$:
 \begin{align}
-	\mathcal{L}\brak{y} = -\brak{\frac{T}{2}}^3 \brak{\frac{1 + z^{-1}}{1 - z^{-1}}}^3
+	\mathcal{L}\brak{y} = -\brak{\frac{h}{2}}^3 \brak{\frac{1 + z^{-1}}{1 - z^{-1}}}^3
 \end{align}
 Let the z-transform of $y\brak{n}$ be $Y\brak{z}$. The z-transform relation becomes:
 \begin{align}
-	Y\brak{z} = -\brak{\frac{T}{2}}^3 \brak{\frac{1 + 3z^{-1} + 3z^{-2} + z^{-3}}{1 - 3z^{-1} + 3z^{-2} - z^{-3}}}
+	Y\brak{z} = -\brak{\frac{h}{2}}^3 \brak{\frac{1 + 3z^{-1} + 3z^{-2} + z^{-3}}{1 - 3z^{-1} + 3z^{-2} - z^{-3}}}
 \end{align}
 \begin{align}
-	Y\brak{z}\brak{1 - 3z^{-1} + 3z^{-2} - z^{-3}} = -\brak{\frac{T}{2}}^3 \brak{1 + 3z^{-1} + 3z^{-2} + z^{-3}}
+	Y\brak{z}\brak{1 - 3z^{-1} + 3z^{-2} - z^{-3}} = -\brak{\frac{h}{2}}^3 \brak{1 + 3z^{-1} + 3z^{-2} + z^{-3}}
 \end{align}
-Taking the inverse z-transform yields the difference equation:
+Multiply the above equation by $z^3$ and taking the inverse z-transform yields the difference equation: \\
+ROC: $z \neq 0$
 \begin{align}
-	y\brak{n} - 3y\brak{n - 1} + 3y\brak{n - 2} - y\brak{n - 3} = -\brak{\frac{T}{2}}^3 \sbrak{1 + 3u\brak{n - 1} + 3u\brak{n - 2} + u\brak{n - 3}}
+	y\brak{n+3} = -3y\brak{n+1} + y\brak{n} + 3y\brak{n+2} + h^2\delta \brak{n} - \brak{\frac{h}{2}}^3\delta \brak{n}
 \end{align}
 
 \textbf{Computational Solution:} \\
