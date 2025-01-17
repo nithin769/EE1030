@@ -1,0 +1,21 @@
+\begin{flushleft}
+	\begin{lstlisting}[language=Python, basicstyle=\footnotesize]
+	y_theory=[0]*n_c
+	def delta(n,k):
+		return 1 if n == k else 0
+	for n in range(n_c-3):
+		y_theory[n+3]=-3*y_theory[n+1]+y_theory[n]+3*y_theory[n+2]+h*h*delta(n,0)-(h/2.0)**3*delta(n,0)
+	for n in range(n_c-3):
+		y_theory[n+3]*=-1
+	y_theory=np.array(y_theory)
+	plt.plot(x_itr,y_theory,label="Theory",color="red")
+	plt.plot(x_itr,y_values,label="Sim",color="green",linestyle = '-.')
+	plt.xlabel("Time(s)")
+	plt.ylabel("Output y(n)")
+	plt.title("Comparison of Theoretical and Simulated Results")
+	plt.legend()
+	plt.grid(True)
+	plt.savefig('../figs/fig.png')
+	plt.show()
+	\end{lstlisting}
+	\end{flushleft}
