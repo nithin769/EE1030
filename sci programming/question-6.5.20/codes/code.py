@@ -55,7 +55,8 @@ def plot_v_vs_r(S, lr, tol, itr):
     
     # Plot the results
     plt.plot(r_values, v_values, marker='o', linestyle='-', color='g', label="v vs r")
-    plt.scatter(r_opt, v_opt, color='red', zorder=5)
+    plt.scatter(r_opt, v_opt, color='red', zorder=5, label="Max point")
+    plt.scatter(r_gp, v_gp, color='yellow', zorder=5, label="Geometric Programming")
     plt.xlabel("Radius (r)")
     plt.ylabel("Volume (v)")
     plt.title("Volume (v) vs Radius (r)")
@@ -91,6 +92,7 @@ problem.solve(gp=True, solver = cp.MOSEK)
 # Extract optimal values
 r_gp = r.value
 h_gp = h.value
+v_gp = calculate_volume(S, r_gp)
 
 # Print the optimal radius for maximum volume
 print(f"Optimal radius for maximum volume: {result.r_opt:.8f}")
