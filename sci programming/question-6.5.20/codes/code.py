@@ -1,6 +1,8 @@
 import ctypes
 import math
 import matplotlib.pyplot as plt
+import cvxpy as cp
+import numpy as np
 
 # Define the Result structure to match the C struct
 class Result(ctypes.Structure):
@@ -71,8 +73,29 @@ itr = 2000 # Number of iterations (increased)
 # Get the result from gradient ascent
 result = gradient_ascent(S, lr, tol, itr)
 
+# Define variables
+r = cp.Variable(pos=True)  # Radius (must be positive)
+h = cp.Variable(pos=True)  # Height (must be positive)
+
+# Define objective: Maximize volume V = π r² h
+objective = cp.Maximize(np.pi * r**2 * h)
+
+# Define constraint: Surface area constraint
+constraint = [(4*np.pi*np.pi*r*r)*((r + h)**2) <= S**2]
+# Define the problem as a geometric program
+problem = cp.Problem(objective, constraint)
+
+# Solve the problem
+problem.solve(gp=True, solver = cp.MOSEK)
+
+# Extract optimal values
+r_gp = r.value
+h_gp = h.value
+
 # Print the optimal radius for maximum volume
 print(f"Optimal radius for maximum volume: {result.r_opt:.8f}")
-
+print(f"Optimal radius (r): {r_gp}")
+print(f"Optimal height (h): {h_gp}")
+print(f"h / r = {h_gp/r_gp}")
 # Call the function to plot v vs r
 plot_v_vs_r(S, lr, tol, itr)
