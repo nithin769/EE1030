@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.5)  17 JAN 2025 17:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.5)  20 JAN 2025 14:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -905,7 +905,11 @@ thkerncmss.
 )
 [2
 
-] [3
+]
+Overfull \vbox (4.91583pt too high) detected at line 53
+ []
+
+[3
 
 ] [4
 
@@ -917,7 +921,7 @@ thkerncmss.
 <figs/fig.png, id=196, 462.528pt x 346.896pt>
 File: figs/fig.png Graphic file (type png)
 <use figs/fig.png>
-Package pdftex.def Info: figs/fig.png  used on input line 95.
+Package pdftex.def Info: figs/fig.png  used on input line 102.
 (pdftex.def)             Requested size: 273.83728pt x 205.38673pt.
  [7
 
@@ -940,7 +944,7 @@ Package rerunfilecheck Info: File `present.out' has not changed.
 Here is how much of TeX's memory you used:
  23114 strings out of 478287
  446180 string characters out of 5849290
- 698497 words of memory out of 5000000
+ 700497 words of memory out of 5000000
  40828 multiletter control sequences out of 15000+600000
  476609 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -956,7 +960,7 @@ e1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb>
-Output written on present.pdf (8 pages, 155154 bytes).
+Output written on present.pdf (8 pages, 156275 bytes).
 PDF statistics:
  306 PDF objects out of 1000 (max. 8388607)
  255 compressed objects within 3 object streams
